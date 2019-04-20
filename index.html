@@ -351,7 +351,7 @@
                 
                   <span class="post-meta-item-text">Bearbeitet am</span>
                 
-                <time title="Geändert am: 2019-04-20 14:15:06" itemprop="dateModified" datetime="2019-04-20T14:15:06+08:00">2019-04-20</time>
+                <time title="Geändert am: 2019-04-20 14:20:06" itemprop="dateModified" datetime="2019-04-20T14:20:06+08:00">2019-04-20</time>
               
             
           </span>
@@ -388,21 +388,18 @@
         
           
             <a id="more"></a>
-<p><a href="#1">1.安装Git</a></p>
-<p>####2.安装Node.js</p>
-<p>####3.安装Hexo</p>
-<p>####4.GitHub创建个人仓库</p>
-<p>####5.生成SSH添加到GitHub</p>
-<p>####6.将hexo部署到GitHub<br>[TOC]</p>
-<h2 id="1"><strong>1.语法示例</strong></h2>
+<p><a href="#1">1.安装Git</a><br><a href="#2">2.安装Node.js</a><br><a href="#3">3.安装Hexo</a><br><a href="#4">4.GitHub创建个人仓库</a><br><a href="#5">5.生成SSH添加到GitHub</a><br><a href="#6">6.将hexo部署到GitHub</a></p>
+<h3 id="1"><strong>1.安装Git</strong></h3>
 
 <p>Git是目前世界上最先进的分布式版本控制系统，可以有效、高速的处理从很小到非常大的项目版本管理。也就是用来管理你的hexo博客文章，上传到GitHub的工具。<br>windows：到git官网上下载,<a href="https://gitforwindows.org/" target="_blank" rel="noopener">Download git</a>,下载后会有一个Git Bash的命令行工具，以后就用这个工具来使用git。<br>linux：对linux来说比较简单，只需要一行代码<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install git</span><br></pre></td></tr></table></figure></p>
-<p><strong>2. 安装Node.js</strong></p>
+<h3 id="2"><strong>2. 安装Node.js</strong></h3>
+
 <p>Windows：可以选择下载<a href="https://nodejs.org/en/" target="_blank" rel="noopener">安装链接</a>来下载。安装时，请勾选Add to PATH选项。<br>Linux：使用命令行</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install nodejs</span><br><span class="line">sudo apt-get install npm</span><br></pre></td></tr></table></figure>
 <p>安装之后，可以使用如下命令行检测是否安装成功</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
-<p><strong>3. 安装hexo</strong></p>
+<h3 id="3"><strong>3. 安装hexo</strong></h3>
+
 <p>所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo，windows使用git bash，可以先创建一个想要放置blog的文件夹，cd到该目录下，输入命令</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 <p>安装之后可以使用，hexo -v，来查看是否安装成功。<br>接下来就可以初始化hexo了</p>
@@ -419,13 +416,14 @@
 </ul>
 <p>使用如下命令，打开hexo的服务，浏览器中输入<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a>就可以看到你生成的博客了。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
-<p><strong>4. GitHub创建个人仓库</strong></p>
+<h3 id="4"><strong>4. GitHub创建个人仓库</strong></h3>
+
 <p>首先，你先要有一个GitHub账户，去注册一个吧。如果不自己买域名的话，注册名字的时候就想好要什么名字，因为网站只能是<strong>yourname.github.io</strong><br>注册完登录后，在<a href="http://github.com" target="_blank" rel="noopener">http://github.com</a>中看到一个New repository，新建仓库。创建一个和你用户名相同的仓库，后面加github.io，只有这样，将来要部署到GitHub page的时候，才会被识别，也就是<a href="http://xxxx.github.io" target="_blank" rel="noopener">http://xxxx.github.io</a>，其中xxx就是你注册GitHub的用户名。我这里是已经建过了.<br><img src="/images/1.png" alt></p>
-<p><strong>5. 生成SSH添加到GitHub</strong><br>回到git bash中，配置<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">"yourname"</span></span><br><span class="line">git config --global user.email <span class="string">"youremail"</span></span><br></pre></td></tr></table></figure></p>
+<p></p><h3 id="5"><strong>5. 生成SSH添加到GitHub</strong></h3><br>回到git bash中，配置<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">"yourname"</span></span><br><span class="line">git config --global user.email <span class="string">"youremail"</span></span><br></pre></td></tr></table></figure><p></p>
 <p>这里的yourname输入你的GitHub用户名，youremail输入你GitHub的邮箱。这样GitHub才能知道你是不是对应它的账户。<br>然后创建SSH,一路回车<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">"youremail"</span></span><br></pre></td></tr></table></figure></p>
 <p>然后找到生成的ssh文件夹，windows用户在c盘中的用户中就可以找到.ssh这个文件。<br>最后在Github的setting中，找到SSH keys的设置选项，点击New SSH key 把你的id_rsa.pub里面的信息复制进去。</p>
 <p><img src="/images/2.png" alt><br>在git bash中，输入以下命令查看是否配置成功<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure></p>
-<p><strong>6. 将hexo部署到GitHub</strong><br>这一步，我们就可以将hexo和GitHub关联起来，也就是将hexo生成的文章部署到GitHub上，打开站点配置文件 _config.yml，翻到最后，修改为 YourgithubName就是你的GitHub账户。注意，在输入的时候，冒号之后必须要有一个空格。如下命令所示<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: https://github.com/YourgithubName/YourgithubName.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></p>
+<p></p><h3 id="6"><strong>6. 将hexo部署到GitHub</strong></h3><br>这一步，我们就可以将hexo和GitHub关联起来，也就是将hexo生成的文章部署到GitHub上，打开站点配置文件 _config.yml，翻到最后，修改为 YourgithubName就是你的GitHub账户。注意，在输入的时候，冒号之后必须要有一个空格。如下命令所示<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: https://github.com/YourgithubName/YourgithubName.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure><p></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">type</span>:git //这样是不对的，没有空格</span><br></pre></td></tr></table></figure>
 <p>此时，安装deploy-git ，也就是部署的命令,这样你才能用命令部署到GitHub。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></p>
 <p>然后使用如下命令，其中 hexo clean清除了你之前生成的东西，也可以不加。 hexo generate 生成静态文章，可以用 hexo g缩写 hexo deploy 部署文章，可以用hexo d缩写<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure></p>
