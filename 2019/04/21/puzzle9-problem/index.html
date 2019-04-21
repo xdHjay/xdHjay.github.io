@@ -96,20 +96,20 @@
 
 
 
-  <meta name="description" content="The 9 puzzle  Dispatch the integers from 0 to 8, with 0 possibly changed to None, as a list of 3 lists of size 3, to represent a 9 puzzle. For instance, let  [[4, 0, 8], [1, 3, 7], [5, 2, 6]] or [[4,">
+  <meta name="description" content="The 9 puzzle描述  Dispatch the integers from 0 to 8, with 0 possibly changed to None, as a list of 3 lists of size 3, to represent a 9 puzzle. For instance, let  [[4, 0, 8], [1, 3, 7], [5, 2, 6]] or [[4">
 <meta name="keywords" content="cs代写,程序代写,cs作业代写,留学生作业代写,c++代写,java代写,python代写,作业代写">
 <meta property="og:type" content="article">
 <meta property="og:title" content="puzzle9-problem">
 <meta property="og:url" content="https://xdhjay.github.io/2019/04/21/puzzle9-problem/index.html">
 <meta property="og:site_name" content="CS留学生辅导代写">
-<meta property="og:description" content="The 9 puzzle  Dispatch the integers from 0 to 8, with 0 possibly changed to None, as a list of 3 lists of size 3, to represent a 9 puzzle. For instance, let  [[4, 0, 8], [1, 3, 7], [5, 2, 6]] or [[4,">
+<meta property="og:description" content="The 9 puzzle描述  Dispatch the integers from 0 to 8, with 0 possibly changed to None, as a list of 3 lists of size 3, to represent a 9 puzzle. For instance, let  [[4, 0, 8], [1, 3, 7], [5, 2, 6]] or [[4">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://xdhjay.github.io/images/puzzle9.png">
 <meta property="og:image" content="https://xdhjay.github.io/images/puzzle_2.png">
-<meta property="og:updated_time" content="2019-04-21T10:21:14.244Z">
+<meta property="og:updated_time" content="2019-04-21T10:26:20.611Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="puzzle9-problem">
-<meta name="twitter:description" content="The 9 puzzle  Dispatch the integers from 0 to 8, with 0 possibly changed to None, as a list of 3 lists of size 3, to represent a 9 puzzle. For instance, let  [[4, 0, 8], [1, 3, 7], [5, 2, 6]] or [[4,">
+<meta name="twitter:description" content="The 9 puzzle描述  Dispatch the integers from 0 to 8, with 0 possibly changed to None, as a list of 3 lists of size 3, to represent a 9 puzzle. For instance, let  [[4, 0, 8], [1, 3, 7], [5, 2, 6]] or [[4">
 <meta name="twitter:image" content="https://xdhjay.github.io/images/puzzle9.png">
 
 
@@ -391,7 +391,7 @@
                 
               
 
-              <time title="创建时间：2019-04-21 11:30:22 / 修改时间：18:21:14" itemprop="dateCreated datePublished" datetime="2019-04-21T11:30:22+08:00">2019-04-21</time>
+              <time title="创建时间：2019-04-21 11:30:22 / 修改时间：18:26:20" itemprop="dateCreated datePublished" datetime="2019-04-21T11:30:22+08:00">2019-04-21</time>
             
 
             
@@ -441,7 +441,7 @@
       
 
       
-        <h2><strong>The 9 puzzle</strong></h2>
+        <h2><strong>The 9 puzzle描述</strong></h2>
 
 <p>Dispatch the integers from 0 to 8, with 0 possibly changed to None, as a list of 3 lists of size 3, to represent a 9 puzzle.</p>
 <p>For instance, let  [[4, 0, 8], [1, 3, 7], [5, 2, 6]] or [[4, None ,8], [1, 3, 7], [5, 2, 6]] represent the 9 puzzle</p>
@@ -466,7 +466,7 @@
 </li>
 </ul>
 <p>Here testing is only for validate_9_puzzle(grid).</p>
-<p>这道题其实就是判断给定九宫格是否是合法的，并且是可求解的。<br>如果是可以求解的，就求解。</p>
+<p></p><h2><strong>代码分析部分</strong></h2><br>这道题其实就是判断给定九宫格是否是合法的，并且是可求解的。<br>如果是可以求解的，就求解。<p></p>
 <p>对于是否合法，如果存在None，置换为0，如果不是1-8的数字和0/None构成，则不成立。<br>接下来判断是否有解，使用这段代码</p>
 <pre><code class="python3"># sum为奇数时return
         if sum(1 for i in range(8) for j in range(i + 1, 9) if grid[i] and grid[j] and grid[i] &gt; grid[j]) % 2:    
@@ -649,7 +649,7 @@ neighbouring_cells = {0: {1, 3}, 1: {0, 2, 4}, 2: {1, 5},
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">The 9 puzzle</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">The 9 puzzle描述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">代码分析部分</span></a></li></ol></div>
             
 
           </div>
