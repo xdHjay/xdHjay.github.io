@@ -389,7 +389,7 @@
                 
               
 
-              <time title="创建时间：2019-04-21 11:30:22 / 修改时间：11:33:57" itemprop="dateCreated datePublished" datetime="2019-04-21T11:30:22+08:00">2019-04-21</time>
+              <time title="创建时间：2019-04-21 11:30:22 / 修改时间：12:21:20" itemprop="dateCreated datePublished" datetime="2019-04-21T11:30:22+08:00">2019-04-21</time>
             
 
             
@@ -441,7 +441,7 @@
       
         
           
-            <p>&lt;–!more–&gt;</p>
+            <a id="more"></a>
 <h2><strong>The 9 puzzle</strong></h2>
 
 <p>Dispatch the integers from 0 to 8, with 0 possibly changed to None, as a list of 3 lists of size 3, to represent a 9 puzzle.</p>
@@ -466,6 +466,14 @@
 </li>
 </ul>
 <p>Here testing is only for validate_9_puzzle(grid).</p>
+<p>这道题其实就是判断给定九宫格是否是合法的，并且是可求解的。<br>如果是可以求解的，就求解。</p>
+<p>对于是否合法，如果存在None，置换为0，如果不是1-8的数字和0/None构成，则不成立。<br>接下来判断是否有解，使用这段代码</p>
+<pre><code class="python3">if sum(1 for i in range(8) for j in range(i + 1, 9) if grid[i] and grid[j] and grid[i] &gt; grid[j]
+       ) % 2:
+#sum为奇数时return
+    return
+
+</code></pre>
 
           
         
