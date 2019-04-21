@@ -389,7 +389,7 @@
                 
               
 
-              <time title="创建时间：2019-04-21 11:30:22 / 修改时间：12:21:20" itemprop="dateCreated datePublished" datetime="2019-04-21T11:30:22+08:00">2019-04-21</time>
+              <time title="创建时间：2019-04-21 11:30:22 / 修改时间：12:29:00" itemprop="dateCreated datePublished" datetime="2019-04-21T11:30:22+08:00">2019-04-21</time>
             
 
             
@@ -440,42 +440,19 @@
 
       
         
-          
-            <a id="more"></a>
-<h2><strong>The 9 puzzle</strong></h2>
+          <h2><strong>The 9 puzzle</strong></h2>
 
 <p>Dispatch the integers from 0 to 8, with 0 possibly changed to None, as a list of 3 lists of size 3, to represent a 9 puzzle.</p>
 <p>For instance, let  [[4, 0, 8], [1, 3, 7], [5, 2, 6]] or [[4, None ,8], [1, 3, 7], [5, 2, 6]] represent the 9 puzzle</p>
-<p><img src="/images/puzzle9.png" alt><br>with the 8 integers being printed on 8 tiles that are placed in a frame with one location being tile free.</p>
-<p>The aim is to slide tiles horizontally or vertically so as to eventually reach the configuration</p>
-<p><img src="/images/puzzle_2.png" alt></p>
-<p>It can be shown that the puzzle is solvable iff the permutation of the integers 1, …, 8, determined by reading those integers off the puzzle from top to bottom and from left to right, is even. This is clearly a necessary condition since:</p>
-<ul>
-<li><p>sliding a tile horizontally does not change the number of inversions;</p>
-</li>
-<li><p>sliding a tile vertically changes the number of inversions by -2, 0 or 2;</p>
-</li>
-<li><p>the parity of the identity is even.</p>
-</li>
-</ul>
-<p>Complete the program nine_puzzle.py so as to have the functionality of the two functions:</p>
-<ul>
-<li><p>validate_9_puzzle(grid) that prints out whether or not grid is a valid representation of a solvable 9 puzzle</p>
-</li>
-<li><p>solve_9_puzzle(grid) that, assuming that grid is a valid representation of a solvable 9 puzzle, outputs a solution to the puzzle, with a minimal number of moves.</p>
-</li>
-</ul>
-<p>Here testing is only for validate_9_puzzle(grid).</p>
-<p>这道题其实就是判断给定九宫格是否是合法的，并且是可求解的。<br>如果是可以求解的，就求解。</p>
-<p>对于是否合法，如果存在None，置换为0，如果不是1-8的数字和0/None构成，则不成立。<br>接下来判断是否有解，使用这段代码</p>
-<pre><code class="python3">if sum(1 for i in range(8) for j in range(i + 1, 9) if grid[i] and grid[j] and grid[i] &gt; grid[j]
-       ) % 2:
-#sum为奇数时return
-    return
-
-</code></pre>
-
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/04/21/puzzle9-problem/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
