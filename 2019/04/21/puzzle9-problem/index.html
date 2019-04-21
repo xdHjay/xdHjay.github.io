@@ -106,7 +106,7 @@
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://xdhjay.github.io/images/puzzle9.png">
 <meta property="og:image" content="https://xdhjay.github.io/images/puzzle_2.png">
-<meta property="og:updated_time" content="2019-04-21T08:10:47.430Z">
+<meta property="og:updated_time" content="2019-04-21T10:21:14.244Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="puzzle9-problem">
 <meta name="twitter:description" content="The 9 puzzle  Dispatch the integers from 0 to 8, with 0 possibly changed to None, as a list of 3 lists of size 3, to represent a 9 puzzle. For instance, let  [[4, 0, 8], [1, 3, 7], [5, 2, 6]] or [[4,">
@@ -391,7 +391,7 @@
                 
               
 
-              <time title="创建时间：2019-04-21 11:30:22 / 修改时间：16:10:47" itemprop="dateCreated datePublished" datetime="2019-04-21T11:30:22+08:00">2019-04-21</time>
+              <time title="创建时间：2019-04-21 11:30:22 / 修改时间：18:21:14" itemprop="dateCreated datePublished" datetime="2019-04-21T11:30:22+08:00">2019-04-21</time>
             
 
             
@@ -469,12 +469,35 @@
 <p>这道题其实就是判断给定九宫格是否是合法的，并且是可求解的。<br>如果是可以求解的，就求解。</p>
 <p>对于是否合法，如果存在None，置换为0，如果不是1-8的数字和0/None构成，则不成立。<br>接下来判断是否有解，使用这段代码</p>
 <pre><code class="python3"># sum为奇数时return
-        if sum(1 for i in range(8) for j in range(i + 1, 9) if grid[i] and grid[j] and grid[i] &gt; grid[j]
-               ) % 2:
-        return
+        if sum(1 for i in range(8) for j in range(i + 1, 9) if grid[i] and grid[j] and grid[i] &gt; grid[j]) % 2:    
+            return
 
 </code></pre>
-<p>之后就是寻找该解，</p>
+<p>之后就是寻找该解，使用队列进行操作。<br>用来存放可以移动的位置，例如，如果0为空，只能移动1和3。</p>
+<pre><code class="python3"># 0 1 2
+# 3 4 5
+# 6 7 8
+neighbouring_cells = {0: {1, 3}, 1: {0, 2, 4}, 2: {1, 5},
+                      3: {0, 4, 6}, 4: {1, 3, 5, 7}, 5: {2, 4, 8},
+                      6: {3, 7}, 7: {4, 6, 8}, 8: {5, 7}
+                      }
+</code></pre>
+<p>以下为关键代码，遍历每一种可能性，对于每一种可能，继续延伸。如果不在已经看过的grid中，就加入<br>直到有一个队列，最终和目标一致。输入这个过程。</p>
+<pre><code class="python3">while True:
+    game = games_queue.popleft()
+    grid, empty_cell = game[-1]
+    if grid == target_grid:
+        break
+    for new_empty_cell in neighbouring_cells[empty_cell]:
+        new_grid = list(grid)
+        new_grid[empty_cell], new_grid[new_empty_cell] = \
+            new_grid[new_empty_cell], new_grid[empty_cell]
+        new_grid = tuple(new_grid)
+        if new_grid not in seen_grids:
+            new_game = game + [(new_grid, new_empty_cell)]
+            games_queue.append(new_game)
+            seen_grids.add(new_grid)
+</code></pre>
 
       
     </div>
