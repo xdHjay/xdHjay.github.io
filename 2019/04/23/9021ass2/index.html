@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="CS留学生辅导代写|python代写|java代写">
 <meta property="og:description" content="2. BackgroundThe game of tangram consists in creating shapes out of pieces. We assume that each piece has its own colour,different to the colour of any other piece in the set we are working with. Just">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-23T12:43:53.920Z">
+<meta property="og:updated_time" content="2019-04-23T12:48:13.717Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python代写:COMP9021tangram">
 <meta name="twitter:description" content="2. BackgroundThe game of tangram consists in creating shapes out of pieces. We assume that each piece has its own colour,different to the colour of any other piece in the set we are working with. Just">
@@ -432,9 +432,16 @@
 <li>develop problem solving skills.</li>
 </ul>
 <p><strong>2.1. Pieces.</strong> Here is an example of the contents of the file pieces_A.xml, typical of the contents of any file of<br>this kind (so only the number of pieces, the colour names, and the various coordinates can differ from one such<br>file to another–we do not bother with allowing for variations, in the use of space in particular).</p>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg"><br/><path d="M 50 50 L 50 90 L 90 90 z" fill="red"/><br/><path d="M 160 170 L 160 130 L 120 130 z" fill="green"/><br/><path d="M 200 30 L 180 30 L 180 50 L 220 50 z" fill="blue"/><br/><path d="M 40 100 L 40 140 L 60 140 L 60 120 z" fill="yellow"/><br/><path d="M 210 70 L 230 90 L 270 90 L 270 50 L 230 50 z" fill="purple"/><br/><path d="M 180 130 L 180 170 L 220 210 L 240 190 z" fill="olive"/><br/><path d="M 100 200 L 120 180 L 80 140 L 80 180 z" fill="magenta"/><br/></svg>
-
-
+<pre><code class="svg">&lt;svg version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+&lt;path d=&quot;M 50 50 L 50 90 L 90 90 z&quot; fill=&quot;red&quot;/&gt;
+&lt;path d=&quot;M 160 170 L 160 130 L 120 130 z&quot; fill=&quot;green&quot;/&gt;
+&lt;path d=&quot;M 200 30 L 180 30 L 180 50 L 220 50 z&quot; fill=&quot;blue&quot;/&gt;
+&lt;path d=&quot;M 40 100 L 40 140 L 60 140 L 60 120 z&quot; fill=&quot;yellow&quot;/&gt;
+&lt;path d=&quot;M 210 70 L 230 90 L 270 90 L 270 50 L 230 50 z&quot; fill=&quot;purple&quot;/&gt;
+&lt;path d=&quot;M 180 130 L 180 170 L 220 210 L 240 190 z&quot; fill=&quot;olive&quot;/&gt;
+&lt;path d=&quot;M 100 200 L 120 180 L 80 140 L 80 180 z&quot; fill=&quot;magenta&quot;/&gt;
+&lt;/svg&gt;
+</code></pre>
 <p></p><h2><strong>3. First task (3 marks)</strong></h2><br>You have to check that the pieces represented in an .xml file satisfy our constraints. So you have to check<br>that each piece is convex, and if it represents a polygon with n sides (n ≥ 3) then the representation consists<br>of an enumeration of the n vertices, either clockwise or anticlockwise. Here is the expected behaviour of your<br>program.<p></p>
 
       
