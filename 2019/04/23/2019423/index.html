@@ -99,14 +99,14 @@
   <meta name="description" content="1. AimsThis project aims to give you practice in- reading and understanding a moderately large relational schema (MyMyUNSW).- implementing SQL queries and views to satisfy requests for information.- T">
 <meta name="keywords" content="sql">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2019423">
+<meta property="og:title" content="SQL代写:Project 1 SQL">
 <meta property="og:url" content="http://procodehelp.online/2019/04/23/2019423/index.html">
 <meta property="og:site_name" content="CS留学生辅导代写|python代写|java代写">
 <meta property="og:description" content="1. AimsThis project aims to give you practice in- reading and understanding a moderately large relational schema (MyMyUNSW).- implementing SQL queries and views to satisfy requests for information.- T">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-23T14:13:11.005Z">
+<meta property="og:updated_time" content="2019-04-23T14:16:41.118Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="2019423">
+<meta name="twitter:title" content="SQL代写:Project 1 SQL">
 <meta name="twitter:description" content="1. AimsThis project aims to give you practice in- reading and understanding a moderately large relational schema (MyMyUNSW).- implementing SQL queries and views to satisfy requests for information.- T">
 
 
@@ -125,7 +125,7 @@
   };
 </script>
 
-  <title>2019423 | CS留学生辅导代写|python代写|java代写</title>
+  <title>SQL代写:Project 1 SQL | CS留学生辅导代写|python代写|java代写</title>
   
 
 
@@ -362,7 +362,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">2019423
+          <h2 class="post-title" itemprop="name headline">SQL代写:Project 1 SQL
 
               
             
@@ -423,7 +423,7 @@
       
 
       
-        <h2><strong>1. Aims</strong></h2><br>This project aims to give you practice in<br>- reading and understanding a moderately large relational schema (MyMyUNSW).<br>- implementing SQL queries and views to satisfy requests for information.<br>- The goal is to build some useful data access operations on the MyMyUNSW database. A theme of this project is “dirty data”. As I was building the database, using a collection of reports from UNSW’s information systems and the database for the academic proposal system (MAPPS), I discovered that there were some inconsistencies in parts of the data (e.g. duplicate entries in the table for UNSW buildings, or students who were mentioned in the student data, but had no enrolment records, and, worse, enrolment records with marks and grades for students who did not exist in the student data). I removed most of these problems as I discovered them, but no doubt missed some. Some of the exercises below aim to uncover such anomalies; please explore the database and let me know if you find other anomalies<br><br><br><br><h2><strong>2. How to do this project: </strong></h2> 
+        <h2><strong>1. Aims</strong></h2><br>This project aims to give you practice in<br>- reading and understanding a moderately large relational schema (MyMyUNSW).<br>- implementing SQL queries and views to satisfy requests for information.<br>- The goal is to build some useful data access operations on the MyMyUNSW database. A theme of this project is “dirty data”. As I was building the database, using a collection of reports from UNSW’s information systems and the database for the academic proposal system (MAPPS), I discovered that there were some inconsistencies in parts of the data (e.g. duplicate entries in the table for UNSW buildings, or students who were mentioned in the student data, but had no enrolment records, and, worse, enrolment records with marks and grades for students who did not exist in the student data). I removed most of these problems as I discovered them, but no doubt missed some. Some of the exercises below aim to uncover such anomalies; please explore the database and let me know if you find other anomalies<br><br><a id="more"></a><br><br><br><h2><strong>2. How to do this project: </strong></h2> 
 
 <ul>
 <li>Read this specification carefully and completely</li>
@@ -442,6 +442,11 @@
 <ul>
 <li>unswid should be taken from Rooms.unswid field. </li>
 <li>longname should be taken from Rooms.longname field. </li>
+</ul>
+<p>Q8 (4 marks) UNSW wants to know the most popular subjects. Define a SQL view Q8(subject) that lists the most popular subjects. A subject is one of the most popular subjects if there are at least 20 distinct students enrolled (via the Course_enrolments table) in at least 20 distinct courses offerings of the subject. Each tuple in the view should contain the following:</p>
+<ul>
+<li>the subject code (Subjects.code field) and name (Subjects.name field), in the format e.g. COMP9311 Database Systems (Note that there is a space between subject code and name)<br>Note: </li>
+<li>Some course offerings have no students enrolled in. It appears in Courses, but not in Course_enrolments.  </li>
 </ul>
 
       
