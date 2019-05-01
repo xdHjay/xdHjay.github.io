@@ -96,18 +96,18 @@
 
 
 
-  <meta name="description" content="2. BackgroundThe game of tangram consists in creating shapes out of pieces. We assume that each piece has its own colour,different to the colour of any other piece in the set we are working with. Just">
+  <meta name="description" content="Quiz 1See https://en.wikipedia.org/wiki/Deterministic_finite_automatonWe consider as alphabet a set of digits. We accept partial transition functions (that is, there might be no transition for a given">
 <meta name="keywords" content="python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="python代写:COMP9021tangram">
-<meta property="og:url" content="http://procodehelp.online/2019/04/23/9021ass2/index.html">
+<meta property="og:title" content="python代写:quiz">
+<meta property="og:url" content="http://procodehelp.online/2019/05/01/2019501/index.html">
 <meta property="og:site_name" content="CS留学生辅导代写|python代写|java代写">
-<meta property="og:description" content="2. BackgroundThe game of tangram consists in creating shapes out of pieces. We assume that each piece has its own colour,different to the colour of any other piece in the set we are working with. Just">
+<meta property="og:description" content="Quiz 1See https://en.wikipedia.org/wiki/Deterministic_finite_automatonWe consider as alphabet a set of digits. We accept partial transition functions (that is, there might be no transition for a given">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-23T12:49:41.333Z">
+<meta property="og:updated_time" content="2019-05-01T02:29:28.917Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="python代写:COMP9021tangram">
-<meta name="twitter:description" content="2. BackgroundThe game of tangram consists in creating shapes out of pieces. We assume that each piece has its own colour,different to the colour of any other piece in the set we are working with. Just">
+<meta name="twitter:title" content="python代写:quiz">
+<meta name="twitter:description" content="Quiz 1See https://en.wikipedia.org/wiki/Deterministic_finite_automatonWe consider as alphabet a set of digits. We accept partial transition functions (that is, there might be no transition for a given">
 
 
 
@@ -115,7 +115,7 @@
 
   
   
-  <link rel="canonical" href="http://procodehelp.online/2019/04/23/9021ass2/">
+  <link rel="canonical" href="http://procodehelp.online/2019/05/01/2019501/">
 
 
 
@@ -125,7 +125,7 @@
   };
 </script>
 
-  <title>python代写:COMP9021tangram | CS留学生辅导代写|python代写|java代写</title>
+  <title>python代写:quiz | CS留学生辅导代写|python代写|java代写</title>
   
 
 
@@ -345,7 +345,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://procodehelp.online/2019/04/23/9021ass2/">
+    <link itemprop="mainEntityOfPage" href="http://procodehelp.online/2019/05/01/2019501/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Procodehelp">
@@ -362,7 +362,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">python代写:COMP9021tangram
+          <h2 class="post-title" itemprop="name headline">python代写:quiz
 
               
             
@@ -388,7 +388,7 @@
                 
               
 
-              <time title="创建时间：2019-04-23 20:36:20" itemprop="dateCreated datePublished" datetime="2019-04-23T20:36:20+08:00">2019-04-23</time>
+              <time title="创建时间：2019-05-01 10:26:02" itemprop="dateCreated datePublished" datetime="2019-05-01T10:26:02+08:00">2019-05-01</time>
             
 
             
@@ -423,26 +423,42 @@
       
 
       
-        <p></p><h2><strong>2. Background</strong></h2><br>The game of tangram consists in creating shapes out of pieces. We assume that each piece has its own colour,<br>different to the colour of any other piece in the set we are working with. Just for reference, here is the list of<br>colours that are available to us (you will not make use of this list):<p></p>
-<a id="more"></a>
-<p></p><h2><strong>1.1. Aims. The purpose of the assignment is to:</strong></h2><p></p>
-<ul>
-<li>design and implement an interface based on the desired behaviour of an application program;</li>
-<li>practice the use of Python syntax;</li>
-<li>develop problem solving skills.</li>
-</ul>
-<p><strong>2.1. Pieces.</strong> Here is an example of the contents of the file pieces_A.xml, typical of the contents of any file of<br>this kind (so only the number of pieces, the colour names, and the various coordinates can differ from one such<br>file to another–we do not bother with allowing for variations, in the use of space in particular).</p>
-<pre><code class="svg">&lt;svg version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-&lt;path d=&quot;M 50 50 L 50 90 L 90 90 z&quot; fill=&quot;red&quot;/&gt;
-&lt;path d=&quot;M 160 170 L 160 130 L 120 130 z&quot; fill=&quot;green&quot;/&gt;
-&lt;path d=&quot;M 200 30 L 180 30 L 180 50 L 220 50 z&quot; fill=&quot;blue&quot;/&gt;
-&lt;path d=&quot;M 40 100 L 40 140 L 60 140 L 60 120 z&quot; fill=&quot;yellow&quot;/&gt;
-&lt;path d=&quot;M 210 70 L 230 90 L 270 90 L 270 50 L 230 50 z&quot; fill=&quot;purple&quot;/&gt;
-&lt;path d=&quot;M 180 130 L 180 170 L 220 210 L 240 190 z&quot; fill=&quot;olive&quot;/&gt;
-&lt;path d=&quot;M 100 200 L 120 180 L 80 140 L 80 180 z&quot; fill=&quot;magenta&quot;/&gt;
-&lt;/svg&gt;
-</code></pre>
-<p></p><h2><strong>3. First task (3 marks)</strong></h2><br>You have to check that the pieces represented in an .xml file satisfy our constraints. So you have to check<br>that each piece is convex, and if it represents a polygon with n sides (n ≥ 3) then the representation consists<br>of an enumeration of the n vertices, either clockwise or anticlockwise. Here is the expected behaviour of your<br>program.<p></p>
+        <p><strong>Quiz 1</strong><br>See <a href="https://en.wikipedia.org/wiki/Deterministic_finite_automaton" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Deterministic_finite_automaton</a><br>We consider as alphabet a set of digits.</p>
+<p>We accept partial transition functions (that is, there might be no transition for a given state and symbol).</p>
+<p>With the accepts() function, we will deal with a single accept state rather than a set of accept states.</p>
+<p>In the test cases below, transitions_2 is the wikipedia example (with ‘S1’ and ‘S2’ renamed as ‘state_1’ and ‘state_2’, respectively), so the automaton that with ‘state_1’ as both initial and unique accept state, accepts words with an even number of occurrences of 0’s.</p>
+<p>See comments and test cases in stub.<br><a id="more"></a></p>
+<p>0.5 mark for passing all tests for describe_automaton()</p>
+<p>1 mark for passing all tests for transitions_as_dict()</p>
+<p>1 mark for passing all tests for accepts()</p>
+<p><strong>Quiz 4</strong><br>Uses Heath Nutrition and Population statistics, stored in the file HNP_Data.csv.gz, assumed to be located in the working directory.</p>
+<p>Prompts the user for an Indicator Name. If it exists and is associated with a numerical value for some countries or categories, for some the years 1960-2015,  then finds out the maximum value, and outputs:</p>
+<p>that value;</p>
+<p>the years when that value was reached, from oldest to more recents years;</p>
+<p>for each such year, the countries or categories for which that value was reached,  listed in lexicographic order.</p>
+<p>1 mark for the maximum value;</p>
+<p>1.5 marks for the years and associated countries</p>
+<p><strong>Quiz 5</strong><br>Prompts the user for a positive integer that codes a set S as follows:</p>
+<p>Bit 0 codes 0</p>
+<p>Bit 1 codes -1</p>
+<p>Bit 2 codes 1</p>
+<p>Bit 3 codes -2</p>
+<p>Bit 4 codes 2</p>
+<p>Bit 5 codes -3</p>
+<p>Bit 6 codes</p>
+<p>…</p>
+<p>Computes a derived positive integer that codes the set of running sums ot the members of S when those are listed in increasing order.</p>
+<p><strong>Quiz 6</strong><br>Randomly generates a grid with 0s and 1s, whose dimension is controlled by user input, as well as the density of 1s in the grid, and determines the size of the largest isosceles triangle, consisting of nothing but 1s and whose base can be either vertical or horizontal, pointing either left or right or up or down.</p>
+<p><strong>Quiz 7</strong><br>Randomly fills a grid with True and False, with width, height and density controlled by user input, and computes the number of all “good paths” that link a point of coordinates (x1, y1) to a point of coordinates (x2, y2) (x1 and x2 are horizontal coordinates, increasing from left to right, y1 and y2 are vertical coordinates, increasing from top to bottom, both starting from 0), that is:</p>
+<p>paths that go through nothing but True values in the grid;</p>
+<p>paths that never go through a given point in the grid more than once;</p>
+<p>paths that never keep the same direction (North, South, East, West) over a distance greater than 2.</p>
+<p><strong>Quiz 8</strong><br>A polynomial object can be created from a string that represents a polynomial as sums or differences of monomials. </p>
+<p>Monomials are ordered from highest to lowest powers.</p>
+<p>All factors are strictly positive, except possibly for the leading factor.</p>
+<p>For nonzero powers, factors of 1 are only implicit.</p>
+<p>A single space surrounds + and - signs between monomials.</p>
+<p>See pdf for expected behaviour</p>
 
       
     </div>
@@ -485,8 +501,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/04/21/puzzle9-problem/" rel="next" title="puzzle9-problem">
-                <i class="fa fa-chevron-left"></i> puzzle9-problem
+              <a href="/2019/04/30/2019430/" rel="next" title="Java代写:COEN352 Random Sort">
+                <i class="fa fa-chevron-left"></i> Java代写:COEN352 Random Sort
               </a>
             
           </div>
@@ -495,8 +511,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/04/23/2019423/" rel="prev" title="SQL代写:SQL">
-                SQL代写:SQL <i class="fa fa-chevron-right"></i>
+              <a href="/2022/01/01/CS代写/" rel="prev" title="CS代写">
+                CS代写 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -541,17 +557,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <div class="site-overview-wrap sidebar-panel">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -653,23 +660,6 @@
         </div>
       </div>
 
-      
-      <!--noindex-->
-        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-            
-            
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">2. Background</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">1.1. Aims. The purpose of the assignment is to:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">3. First task (3 marks)</span></a></li></ol></div>
-            
-
-          </div>
-        </div>
-      <!--/noindex-->
       
 
       
