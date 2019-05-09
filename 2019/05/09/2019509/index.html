@@ -96,18 +96,18 @@
 
 
 
-  <meta name="description" content="1.问题描述2.代码分析 Diophantine equationsWe consider Diophantine equations of the form ax+by=c with a and b both not equal to 0. We will represent such an equation as a string of the form ax+by=c or ax-by=c">
+  <meta name="description" content="RequirementFor this final assignment, you will write a text-based adventure game (i.e., a piece of“interactive fiction”) with an emphasis on storyline, worldbuilding, and the development of an rich se">
 <meta name="keywords" content="python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Diophantine equations">
-<meta property="og:url" content="http://procodehelp.online/2019/04/27/Diophantine equation/index.html">
+<meta property="og:title" content="Python代写：COMP1501">
+<meta property="og:url" content="http://procodehelp.online/2019/05/09/2019509/index.html">
 <meta property="og:site_name" content="CS留学生辅导代写|python代写|java代写">
-<meta property="og:description" content="1.问题描述2.代码分析 Diophantine equationsWe consider Diophantine equations of the form ax+by=c with a and b both not equal to 0. We will represent such an equation as a string of the form ax+by=c or ax-by=c">
+<meta property="og:description" content="RequirementFor this final assignment, you will write a text-based adventure game (i.e., a piece of“interactive fiction”) with an emphasis on storyline, worldbuilding, and the development of an rich se">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-27T11:32:37.874Z">
+<meta property="og:updated_time" content="2019-05-09T09:14:56.196Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Diophantine equations">
-<meta name="twitter:description" content="1.问题描述2.代码分析 Diophantine equationsWe consider Diophantine equations of the form ax+by=c with a and b both not equal to 0. We will represent such an equation as a string of the form ax+by=c or ax-by=c">
+<meta name="twitter:title" content="Python代写：COMP1501">
+<meta name="twitter:description" content="RequirementFor this final assignment, you will write a text-based adventure game (i.e., a piece of“interactive fiction”) with an emphasis on storyline, worldbuilding, and the development of an rich se">
 
 
 
@@ -115,7 +115,7 @@
 
   
   
-  <link rel="canonical" href="http://procodehelp.online/2019/04/27/Diophantine equation/">
+  <link rel="canonical" href="http://procodehelp.online/2019/05/09/2019509/">
 
 
 
@@ -125,7 +125,7 @@
   };
 </script>
 
-  <title>Diophantine equations | CS留学生辅导代写|python代写|java代写</title>
+  <title>Python代写：COMP1501 | CS留学生辅导代写|python代写|java代写</title>
   
 
 
@@ -345,7 +345,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://procodehelp.online/2019/04/27/Diophantine equation/">
+    <link itemprop="mainEntityOfPage" href="http://procodehelp.online/2019/05/09/2019509/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Procodehelp">
@@ -362,7 +362,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">Diophantine equations
+          <h2 class="post-title" itemprop="name headline">Python代写：COMP1501
 
               
             
@@ -388,7 +388,7 @@
                 
               
 
-              <time title="创建时间：2019-04-27 11:48:14" itemprop="dateCreated datePublished" datetime="2019-04-27T11:48:14+08:00">2019-04-27</time>
+              <time title="创建时间：2019-05-09 17:13:12" itemprop="dateCreated datePublished" datetime="2019-05-09T17:13:12+08:00">2019-05-09</time>
             
 
             
@@ -423,16 +423,23 @@
       
 
       
-        <p><a href="#1">1.问题描述</a><br><a href="#2">2.代码分析</a></p>
-<p></p><h2 id="1"><strong>Diophantine equations</strong></h2><br>We consider Diophantine equations of the form ax+by=c with a and b both not equal to 0. We will represent such an equation as a string of the form ax+by=c or ax-by=c where a and c are nonzero integer literals (not preceded by + in case they are positive) and where b is a strictly positive integer literal (not preceded by +), possibly with spaces anywhere at the beginning, at the end, and around the +, - and = characters. The equation ax+by=c has a solution iff c is a multiple of gcd(a,b). In case c is indeed a multiple of gcd(a,b), then ax+by=c has has infinitely many solutions, namely, all pairs (x,y) of the form<p></p>
-<p>for arbitrary integers n, where lcm(a,b) denotes the least common multiplier of a and b, and where (x0,y0) is a solution to the equation. That particular solution can be derived from the extended Euclidian algorithm, that yields not only gcd(a,b) but also a pair of Bézout coefficients, namely, two integers x and y with ax+by=gcd(a,b). To normalise the representation of the solutions, we rewrite the equation above as</p>
-<p>where sign(a) is 1 if a is positive and -1 if a is negative, and we impose that the pair (x0,y0) is such that x0is nonnegative and minimal.<br>Complete the Python program diophantine.py that defines a function diophantine() that prints out whether the equation provided as argument has a solution, and in case it does, prints out the normalised representation of its solutions. The output reproduces the equation nicely formatted, that is, with a single space around the +, - and = characters. As for the representation of the solutions, it is also nicely formatted, omitting x0 or y0 when they are equal to 0, and omitting 1 as a factor of n. Press the Run or Mark button for possible interactions. </p>
+        <p><strong>Requirement</strong><br>For this final assignment, you will write a text-based adventure game (i.e., a piece of<br>“interactive fiction”) with an emphasis on storyline, worldbuilding, and the development of an rich setting populated with a cast of believable characters. Your genre and a tagline will be provided separately, having been either selected by you (if you placed near the top in the assignment 3 tournament) or assigned randomly.</p>
 <a id="more"></a>
-<p></p><h2 id="2"><strong>代码分析</strong></h2><br>丢番图方程，寻找通解。<br>例如195x + 42y =12，化简为65x + 14y =4。<br>递归求解， 65 = 14<em>4 + 9 ， 14 = 9</em>1 + 5， 9 = 5<em>1 + 4。<br>65 - 14</em>4 = 9 , 14 - 9<em>1 = 5, 9 - 5</em>1 = 4。<br>最终可以求出 2<em>26 - 9</em>14 = 4.通解为，(2+14n,-9-65n)<br>先将式子分解，提取出系数a,b,c，并且判断a，b的正负<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">a_sign = 2 * (a &gt; 0) - 1</span><br><span class="line">b_sign = 2 * (b &gt; 0) - 1</span><br><span class="line">x_step = abs(b) // gcd</span><br><span class="line">y_step = abs(a) // gcd</span><br><span class="line">sign_product = a_sign * b_sign</span><br></pre></td></tr></table></figure><p></p>
-<p>使用如下代码递归求解出公约数，</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">def extended_euclid(a, b):</span><br><span class="line">    if b == 0:</span><br><span class="line">        return a, 1, 0</span><br><span class="line">    gcd, x, y = extended_euclid(b, a % b)</span><br><span class="line">    return gcd, y, x - (a // b) * y</span><br></pre></td></tr></table></figure>
-<p>c % gcd 不为0则无解。<br>x.a + y.b = c.<br>因为lcm(a,b).gcd(a,b) = |a||b|,<br>答案就是x.a + |b|/gcd.n + y.b - sign_product|a|/gcd.n = c中的一个。<br>因此，x.a + x_step.n + y.b - sign_product.y_step.n = c.</p>
-<p>最后得出结果。</p>
+<p>Please ensure that you also understand and observe the following additional requirements:</p>
+<p>Your submission for this assignment must be a text-based adventure game. No images of any kind are permitted and you may not use pygame (or curses, or any other game development module) in creating your solution. You may not use any ASCII art either and your game must be played entirely in a single, monochromatic terminal window with no special effects whatsoever. This constraint is in place to ensure that the only avenue available to you for conveying your plot, setting, and characters is through the construction of meticulous and thoughtful descriptions.</p>
+<p>Although the most basic plot details have been provided, you must ensure that your “finer” plot details, setting description, obstacles, non-player characters, and available actions are all consistent with the expectations associated with your assigned genre and tagline.</p>
+<p>Your main storyline must be divided into at least 10 objectives and you must have a scoring system (i.e., report a number to indicate how far the player has progressed).</p>
+<p>Your game world must consist of at least 25 different “regions” and each region must be described for the user. To clarify, it would not be acceptable for your game to describe the current location of the player using simple sentences like “You are in room 3”.</p>
+<p>Once your game has described the current region to the player you must prompt the player for a verb phrase that is used by the player to explain what they would like their avatar to do in the game world. Your game would then process this verb phrase and adjust the game world (i.e., player position, player inventory, status of other objects in the game world, etc.) accordingly.</p>
+<p>Your player must be able to move around in your game world and your game world can be either two-dimensional or three-dimensional. You may use the “classic” approach of having the player simply specify N, S, E, or W, or you may do something more elaborate (i.e., climb stairs, descend ladder, etc.), as appropriate.</p>
+<p>Your game world must contain at least 16 different objects with which to interact, and at least 10 of these objects must be portable (i.e., your player must be able to TAKE and DROP) each of these objects to add or remove them from their inventory, respectively.</p>
+<p>Your player must be able to LOOK in any region to receive a more thorough and evocative description of that region. Your player must also be able to EXAMINE each of the interactive objects.</p>
+<p>Your game must have enemies (at least 4 different “types”) and some kind of challenge system. This might take the form of a combat system or it might take the form of something more appropriate to your genre and tagline, but the mechanic you use to resolve these challenges must not be trivial and must be appropriate to your setting. As a clarifying example, allowing the player to say “KILL ORC” would be considered trivial, but including a hit point stat and resolving a battle over several turns would be acceptable. At least 3 of these enemy types must also be able to “move” between the different regions of your game world, (as the player does).</p>
+<p>Your game must have some non-player characters with whom your players can “TALK” and “ASK” questions. There must be at least 4 such characters, and at least 3 of these characters must be able to “move” between the different regions of your game world, (as the player does).</p>
+<p>You must provide a map and a walkthrough (i.e., a solution) with your submission, to facilitate the marking process. Your game must also provide instructions.</p>
+<p>It is very important to recognize that the majority of the mark you receive for this assignment will be attributed to the quality of your storyline, worldbuilding, setting/enemy/character choices, and descriptions. Since you are communicating your game world to the player entirely through the bodies of text that you have authored, it is especially crucial that you proofread these texts and ensure they are free of spelling and grammatical errors (and anything else that would prevent your player from being fully immersed in the storyline).</p>
+<p>Your submission must not, under any circumstances, be treated as a work of parody or homage, and must not be written “tongue-in-cheek”. In other words, you must treat your assigned genre and tagline seriously, regardless of what they may be.</p>
+<p>This program (along with each of the other programs you have submitted for this class) must be a completely original work, authored by you and you alone, prepared for the current offering (i.e., Winter 2019) of COMP1501. Do not discuss this assignment with anyone except the instructor or the teaching assistants, and do not copy text or source code from the internet or any other source. Submissions that include any volume of plagiarized text will receive an automatic grade of zero.</p>
 
       
     </div>
@@ -475,8 +482,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/04/26/2019426/" rel="next" title="python代写:Knave and Knight">
-                <i class="fa fa-chevron-left"></i> python代写:Knave and Knight
+              <a href="/2019/05/06/2019506/" rel="next" title="Java代写:COMP1020">
+                <i class="fa fa-chevron-left"></i> Java代写:COMP1020
               </a>
             
           </div>
@@ -485,8 +492,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/04/28/myprolog/" rel="prev" title="prolog学习">
-                prolog学习 <i class="fa fa-chevron-right"></i>
+              <a href="/2022/01/01/CS代写/" rel="prev" title="CS代写">
+                CS代写 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -531,17 +538,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <div class="site-overview-wrap sidebar-panel">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -647,23 +645,6 @@
         </div>
       </div>
 
-      
-      <!--noindex-->
-        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-            
-            
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1"><span class="nav-number">1.</span> <span class="nav-text">Diophantine equations</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2"><span class="nav-number">2.</span> <span class="nav-text">代码分析</span></a></li></ol></div>
-            
-
-          </div>
-        </div>
-      <!--/noindex-->
       
 
       
