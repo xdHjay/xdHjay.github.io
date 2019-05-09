@@ -1,4 +1,3 @@
-
 var a_idx = 0;
 jQuery(document).ready(function($) {
     $("body").click(function(e) {
@@ -34,5 +33,5 @@ function delay() {
 }
 
 function s() {
-    return "rgb(" + ~~ (255 * Math.random()) + "," + ~~ (255 * Math.random()) + "," + ~~ (255 * Math.random()) + ")"
+    return "rgb(" + ~~ (255 * Math.random()+100) + "," + ~~ (255 * Math.random()) + "," + ~~ (255 * Math.random()) + ")"
 }
