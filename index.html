@@ -563,6 +563,161 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://procodehelp.online/2019/05/10/2019510/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Procodehelp">
+      <meta itemprop="description" content="微信：Procodehelp <br> 邮箱：procodehelp@sina.cn">
+      <meta itemprop="image" content="/images/wechat.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CS留学生辅导代写|python代写|java代写">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/05/10/2019510/" class="post-title-link" itemprop="url">Database代写：CS158</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-05-10 15:54:45" itemprop="dateCreated datePublished" datetime="2019-05-10T15:54:45+08:00">2019-05-10</time>
+            
+
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong>Requirement</strong><br>You will continue to work in pairs for this assignment. You do not need to register again but in case you change your group partner please let us know via email. Use the following instructions to guide you in completing Four Sections (Part A-Part D) of the project. You should turn the work in for grading by the due date.</p>
+<p>Note: Make sure you have altered the password of your (Group) Oracle a/c and please keep it safe within your group. You do not want other people accessing your account. We have seen this with Part A assignment that students have been able to access other accounts, as the default passwords are not changed. Remember it is your responsibility to protect your work.</p>
+<p><strong>PART B</strong><br>Queries (SQL/LINQ), Triggers, Procedures, Functions (PL SQL) &amp; MongoDB (NoSQL)<br>Download following two files provided in a zipped folder (partb.zip) under the Assignment heading from the Stream site:</p>
+<p>Bookscript database file (Bookscript2019.sql) - for Sections A, B and C.<br>The file provides code to create the required database in your Oracle account. Seven tables created are CUSTOMER, BOOKORDER, PUBLISHER, AUTHOR, BOOK, BOOKORDERITEM, and BOOKAUTHOR.</p>
+<p>Collection file (NoSQL.txt) - for Section D.<br>Create a new script file using some text editor (e.g. Notepad++) for writing your solution code. Include query number (e.g. a) and the given Query statement (e.g. Write a query that will list…) as part of the comment before each query’s SQL / PL/SQL / LINQ code and the output results. Make sure the output results in the project report are reasonably formatted (proper alignment, appropriate column names, etc.) for readability purposes.</p>
+<p>For PL/SQL (triggers, procedures, etc.) include the code, the output produced from creation (e.g. procedure successfully created, etc.) and testing examples (e.g. execution of the procedure using some quality test examples to prove that procedure/trigger works the way it is intended to work).</p>
+<p>All (SQL/LINQ) queries must only be based on the information provided in the assignment question (query’s plain English statement). Do not use a different criterion to arrive at the expected equivalent query result set. Also, do not use ROWID to sort and get the first record, etc. to manipulate the query results. Please ensure that the query results display all the columns that are necessary to evaluate the query results. Your code should work correctly even when database is changed (e.g. added more records, deleted some, modified some values, etc.).</p>
+<p>Note: For all exercises asking you to display names, list first name and last name as a single column instead of separate columns.</p>
+<p>Remember to include the BOTH the code (SQL /PL SQL /LINQ/ Map-Reduce) and its output in your printed report. Certain questions can have additional requirements.</p>
+<p><strong>Section A (SQL Queries)</strong><br>Note: For each of the questions (a)-(j) in Section A, write code using a SINGLE statement ONLY (i.e. you cannot write two separate select statements to arrive at an answer; however select can be used more than once in a statement i.e. only one semi- colon in your code). Use only the given criteria. We will either give full or zero marks for questions in this section so make sure your answer is fully correct.</p>
+<p>a. Write a query that will list all the books with the price difference (between retail and cost) of $10 or more. Display your results in the decreasing order of the price difference.<br>b. Write a query that will list books in COMPUTER category along with other details (e.g. author(s), etc.). The query should work for all the case-variations of category values (i.e. ‘computer’, ‘Computer’, etc.) in the database.<br>c. Write a query that will list books that have retail price $30 or less and were published in any of the years 1999 or 2001. Display results in the increasing order of the publication year (and not the publication date) and decreasing retail price. Display the year of publication with the column titled Publication Year.<br>d. Write a query that lists both customer and author details (only their ids, first and last names). Provide suitable headings for the merged list.<br>e. Write a query that will list all the publishers, their details (name, etc.) and total number of published books. Display your output in the decreasing order of total number of publications.<br>f. Write a query that will display the states with more than one customer. Display the state with maximum customers first.<br>g. Write a query that will list the publisher(s) with the maximum number of published books. If there is more than one publisher (e.g. 2 publishers) with maximum publications, your query should and list all (i.e. both if 2).<br>h. Write a query that will list the customer(s) who had ordered maximum number of items (two copies of the same book will be counted as two items). Again, like g) there can be more than one customer.<br>i. Write a query that will display the customer(s) that referred maximum number of customers. Again, like g) there can be more than one customer.<br>j. Write a query to list all the books that have multiple authors. Also, display the number of authors who wrote the book.<br><strong>Section B (PL SQL)</strong><br>Comprehensive testing examples needed for all PL/SQL (triggers, procedures, cursor and function). You need to capture and show that you tested your code using good test cases. May include some exception handling if deemed necessary.</p>
+<p>k. Think of some useful business rules or situations where it would be appropriate for your triggers to fire. Do not write triggers to do something that could be done using other database design constraints (e.g., simple referential integrity checking, default values to attributes, or simply saying record is being inserted, or an attribute has a null value, etc.). Provide sensible and useful trigger examples and do not use the already given or similar triggers for this question. Start with providing the plain English sentences that clearly explain the purpose (what they will do) of your triggers. Then provide the PL SQL code and the results. Triggers should be based on the tables already provided. Do not unnecessarily create too many and /or similar tables. Adding one or two tables may be okay - but justification needed. Altering a table (adding a field) is fine.<br>Write two triggers - one statement level and one row level. Along with the purpose, code, display the successful creation and running of the triggers in your report. Please ensure that you also display the relevant tables before and after (results of the trigger) the triggers are fired.<br>l. Write a procedure to insert a new book record. The procedure should also automatically calculate the book retail value. This retail is calculated as 112.5% of the book cost price plus 8.5% of the average cost price of the existing books. Provide rest of the attributes’ values as input parameters. Execute your procedure to insert at least one book record.<br>m. Write a trigger that does not allow the book retail price to be updated when the increase (in retail price) is over 25%. Provide test data and corresponding results to confirm that the trigger works.<br>n. Write a trigger that does not allow more than three author names to be associated with books under FITNESS category (e.g. if a Book is added, it should only allow up to 3 book authors to be recorded in BookAuthor table for category FITNESS books). Provide the appropriate test data and results.<br>o. Write a cursor to list book authors for all the COMPUTER category books (along with their book title, cost and retail). Use appropriate exception handling.<br>p. Write a function to format book cost, retail price to $99.99. Use this function in a SQL statement for displaying books’ costs and retail prices.<br><strong>Section C</strong><br>For (q) - (u) below, write queries using LINQ<br>q. List all books with the retail $22 or over.<br>r. List all books that have the word “HOW” in the book title.<br>s. List all book categories, book titles and publisher names.<br>t. Display total number of books by each publisher in the order of publisher ID.<br>u. Display the count of books in each category in the increasing order of category.<br><strong>Section D (NoSQL)</strong><br>Use the code provided in NoSQL.txt to create a collection of ten rows called hobbits.</p>
+<p>Now write Map-Reduce code to generate a report based on:</p>
+<p>gender-wise average weight<br>Include both code and the report generated in your printed work. Place the code in script file as well.</p>
+<p><strong>Assignment Submission</strong><br>Organise your final report to include complete requirements. Make sure the report contents are also in the order of the laid requirements. There are three parts to this assignment submission, a physical printed report and two electronic resources - database objects and scripts. You must put all the files you used as solution to Part B exercises into a “single” compresssed file and should submit it via the Stream Assignment link.</p>
+<p>Checklist for physical report submission (assignment box in reception of MS building)</p>
+<p>Readable printout of SQL, PL/SQL, LINQ commands, and Map-Reduce code. Remember to include the related outputs as well. For some questions, there are additional specific requirements (e.g. purpose of triggers, test data, etc.).</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://procodehelp.online/2019/05/09/2019509/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1735,152 +1890,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://procodehelp.online/2019/04/25/2019425/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Procodehelp">
-      <meta itemprop="description" content="微信：Procodehelp <br> 邮箱：procodehelp@sina.cn">
-      <meta itemprop="image" content="/images/wechat.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="CS留学生辅导代写|python代写|java代写">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/04/25/2019425/" class="post-title-link" itemprop="url">python代写:tic-tac-toe</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-04-25 13:59:46" itemprop="dateCreated datePublished" datetime="2019-04-25T13:59:46+08:00">2019-04-25</time>
-            
-
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p></p><h2><strong>Introduction</strong></h2><br>In this project you will be writing an agent to play the game of Nine-Board Tic-Tac-Toe.<br>This game is played on a 3 x 3 array of 3 x 3 Tic-Tac-Toe boards. The first move is made by placing an X in a randomly chosen cell of a randomly chosen board. After that, the two players take turns placing an O or X alternately into an empty cell of the board corresponding to the cell of the previous move. (For example, if the previous move was into the upper right corner of a board, the next move must be made into the upper right board.)<p></p>
-<p>The game is won by getting three-in-a row either horizontally, vertically or diagonally in one of the nine boards. If a player is unable to make their move (because the relevant board is already full) the game ends in a draw.</p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/04/25/2019425/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1929,7 +1938,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">15</span>
+                    <span class="site-state-item-count">16</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1991,7 +2000,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">12</span>
+                      
+                    
+                    <span class="site-state-item-count">13</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
