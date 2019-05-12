@@ -96,21 +96,18 @@
 
 
 
-  <meta name="description" content="1.The 9 puzzle描述2.代码分析部分 The 9 puzzle描述  Dispatch the integers from 0 to 8, with 0 possibly changed to None, as a list of 3 lists of size 3, to represent a 9 puzzle. For instance, let  [[4, 0, 8], [1,">
-<meta name="keywords" content="python,learn">
+  <meta name="description" content="RequirementFor this final assignment, you will write a text-based adventure game (i.e., a piece of“interactive fiction”) with an emphasis on storyline, worldbuilding, and the development of an rich se">
+<meta name="keywords" content="python,SQL">
 <meta property="og:type" content="article">
-<meta property="og:title" content="puzzle9-problem">
-<meta property="og:url" content="http://procodehelp.online/2019/04/21/puzzle9-problem/index.html">
+<meta property="og:title" content="Python代写：COMP1501">
+<meta property="og:url" content="http://procodehelp.online/2019/05/12/2019512/index.html">
 <meta property="og:site_name" content="CS留学生辅导代写|python代写|java代写">
-<meta property="og:description" content="1.The 9 puzzle描述2.代码分析部分 The 9 puzzle描述  Dispatch the integers from 0 to 8, with 0 possibly changed to None, as a list of 3 lists of size 3, to represent a 9 puzzle. For instance, let  [[4, 0, 8], [1,">
+<meta property="og:description" content="RequirementFor this final assignment, you will write a text-based adventure game (i.e., a piece of“interactive fiction”) with an emphasis on storyline, worldbuilding, and the development of an rich se">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://procodehelp.online/images/puzzle9.png">
-<meta property="og:image" content="http://procodehelp.online/images/puzzle_2.png">
-<meta property="og:updated_time" content="2019-04-22T02:20:22.748Z">
+<meta property="og:updated_time" content="2019-05-12T08:14:59.113Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="puzzle9-problem">
-<meta name="twitter:description" content="1.The 9 puzzle描述2.代码分析部分 The 9 puzzle描述  Dispatch the integers from 0 to 8, with 0 possibly changed to None, as a list of 3 lists of size 3, to represent a 9 puzzle. For instance, let  [[4, 0, 8], [1,">
-<meta name="twitter:image" content="http://procodehelp.online/images/puzzle9.png">
+<meta name="twitter:title" content="Python代写：COMP1501">
+<meta name="twitter:description" content="RequirementFor this final assignment, you will write a text-based adventure game (i.e., a piece of“interactive fiction”) with an emphasis on storyline, worldbuilding, and the development of an rich se">
 
 
 
@@ -118,7 +115,7 @@
 
   
   
-  <link rel="canonical" href="http://procodehelp.online/2019/04/21/puzzle9-problem/">
+  <link rel="canonical" href="http://procodehelp.online/2019/05/12/2019512/">
 
 
 
@@ -128,7 +125,7 @@
   };
 </script>
 
-  <title>puzzle9-problem | CS留学生辅导代写|python代写|java代写</title>
+  <title>Python代写：COMP1501 | CS留学生辅导代写|python代写|java代写</title>
   
 
 
@@ -351,7 +348,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://procodehelp.online/2019/04/21/puzzle9-problem/">
+    <link itemprop="mainEntityOfPage" href="http://procodehelp.online/2019/05/12/2019512/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Procodehelp">
@@ -368,7 +365,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">puzzle9-problem
+          <h2 class="post-title" itemprop="name headline">Python代写：COMP1501
 
               
             
@@ -394,7 +391,7 @@
                 
               
 
-              <time title="创建时间：2019-04-21 11:30:22" itemprop="dateCreated datePublished" datetime="2019-04-21T11:30:22+08:00">2019-04-21</time>
+              <time title="创建时间：2019-05-12 16:13:51" itemprop="dateCreated datePublished" datetime="2019-05-12T16:13:51+08:00">2019-05-12</time>
             
 
             
@@ -429,64 +426,21 @@
       
 
       
-        <p><a href="#1">1.The 9 puzzle描述</a><br><a href="#2">2.代码分析部分</a></p>
-<h2 id="1"><strong>The 9 puzzle描述</strong></h2>
-
-<p>Dispatch the integers from 0 to 8, with 0 possibly changed to None, as a list of 3 lists of size 3, to represent a 9 puzzle.</p>
-<p>For instance, let  [[4, 0, 8], [1, 3, 7], [5, 2, 6]] or [[4, None ,8], [1, 3, 7], [5, 2, 6]] represent the 9 puzzle</p>
-<a id="more"></a>
-<p><img src="/images/puzzle9.png" alt><br>with the 8 integers being printed on 8 tiles that are placed in a frame with one location being tile free.</p>
-<p>The aim is to slide tiles horizontally or vertically so as to eventually reach the configuration</p>
-<p><img src="/images/puzzle_2.png" alt></p>
-<p>It can be shown that the puzzle is solvable iff the permutation of the integers 1, …, 8, determined by reading those integers off the puzzle from top to bottom and from left to right, is even. This is clearly a necessary condition since:</p>
-<ul>
-<li><p>sliding a tile horizontally does not change the number of inversions;</p>
-</li>
-<li><p>sliding a tile vertically changes the number of inversions by -2, 0 or 2;</p>
-</li>
-<li><p>the parity of the identity is even.</p>
-</li>
-</ul>
-<p>Complete the program nine_puzzle.py so as to have the functionality of the two functions:</p>
-<ul>
-<li><p>validate_9_puzzle(grid) that prints out whether or not grid is a valid representation of a solvable 9 puzzle</p>
-</li>
-<li><p>solve_9_puzzle(grid) that, assuming that grid is a valid representation of a solvable 9 puzzle, outputs a solution to the puzzle, with a minimal number of moves.</p>
-</li>
-</ul>
-<p>Here testing is only for validate_9_puzzle(grid).</p>
-<p></p><h2 id="2"><strong>代码分析部分</strong></h2><br>这道题其实就是判断给定九宫格是否是合法的，并且是可求解的。<br>如果是可以求解的，就求解。<p></p>
-<p>对于是否合法，如果存在None，置换为0，如果不是1-8的数字和0/None构成，则不成立。<br>接下来判断是否有解，使用这段代码</p>
-<pre><code class="python3"># sum为奇数时return
-        if sum(1 for i in range(8) for j in range(i + 1, 9) if grid[i] and grid[j] and grid[i] &gt; grid[j]) % 2:    
-            return
-
-</code></pre>
-<p>之后就是寻找该解，使用队列进行操作。<br>用来存放可以移动的位置，例如，如果0为空，只能移动1和3。</p>
-<pre><code class="python3"># 0 1 2
-# 3 4 5
-# 6 7 8
-neighbouring_cells = {0: {1, 3}, 1: {0, 2, 4}, 2: {1, 5},
-                      3: {0, 4, 6}, 4: {1, 3, 5, 7}, 5: {2, 4, 8},
-                      6: {3, 7}, 7: {4, 6, 8}, 8: {5, 7}
-                      }
-</code></pre>
-<p>以下为关键代码，遍历每一种可能性，对于每一种可能，继续延伸。如果不在已经看过的grid中，就加入<br>直到有一个队列，最终和目标一致。输入这个过程。</p>
-<pre><code class="python3">while True:
-    game = games_queue.popleft()
-    grid, empty_cell = game[-1]
-    if grid == target_grid:
-        break
-    for new_empty_cell in neighbouring_cells[empty_cell]:
-        new_grid = list(grid)
-        new_grid[empty_cell], new_grid[new_empty_cell] = \
-            new_grid[new_empty_cell], new_grid[empty_cell]
-        new_grid = tuple(new_grid)
-        if new_grid not in seen_grids:
-            new_game = game + [(new_grid, new_empty_cell)]
-            games_queue.append(new_game)
-            seen_grids.add(new_grid)
-</code></pre>
+        <p>Requirement<br>For this final assignment, you will write a text-based adventure game (i.e., a piece of<br>“interactive fiction”) with an emphasis on storyline, worldbuilding, and the development of an rich setting populated with a cast of believable characters. Your genre and a tagline will be provided separately, having been either selected by you (if you placed near the top in the assignment 3 tournament) or assigned randomly.<br><a id="more"></a><br>Please ensure that you also understand and observe the following additional requirements:</p>
+<p>Your submission for this assignment must be a text-based adventure game. No images of any kind are permitted and you may not use pygame (or curses, or any other game development module) in creating your solution. You may not use any ASCII art either and your game must be played entirely in a single, monochromatic terminal window with no special effects whatsoever. This constraint is in place to ensure that the only avenue available to you for conveying your plot, setting, and characters is through the construction of meticulous and thoughtful descriptions.</p>
+<p>Although the most basic plot details have been provided, you must ensure that your “finer” plot details, setting description, obstacles, non-player characters, and available actions are all consistent with the expectations associated with your assigned genre and tagline.</p>
+<p>Your main storyline must be divided into at least 10 objectives and you must have a scoring system (i.e., report a number to indicate how far the player has progressed).</p>
+<p>Your game world must consist of at least 25 different “regions” and each region must be described for the user. To clarify, it would not be acceptable for your game to describe the current location of the player using simple sentences like “You are in room 3”.</p>
+<p>Once your game has described the current region to the player you must prompt the player for a verb phrase that is used by the player to explain what they would like their avatar to do in the game world. Your game would then process this verb phrase and adjust the game world (i.e., player position, player inventory, status of other objects in the game world, etc.) accordingly.</p>
+<p>Your player must be able to move around in your game world and your game world can be either two-dimensional or three-dimensional. You may use the “classic” approach of having the player simply specify N, S, E, or W, or you may do something more elaborate (i.e., climb stairs, descend ladder, etc.), as appropriate.</p>
+<p>Your game world must contain at least 16 different objects with which to interact, and at least 10 of these objects must be portable (i.e., your player must be able to TAKE and DROP) each of these objects to add or remove them from their inventory, respectively.</p>
+<p>Your player must be able to LOOK in any region to receive a more thorough and evocative description of that region. Your player must also be able to EXAMINE each of the interactive objects.</p>
+<p>Your game must have enemies (at least 4 different “types”) and some kind of challenge system. This might take the form of a combat system or it might take the form of something more appropriate to your genre and tagline, but the mechanic you use to resolve these challenges must not be trivial and must be appropriate to your setting. As a clarifying example, allowing the player to say “KILL ORC” would be considered trivial, but including a hit point stat and resolving a battle over several turns would be acceptable. At least 3 of these enemy types must also be able to “move” between the different regions of your game world, (as the player does).</p>
+<p>Your game must have some non-player characters with whom your players can “TALK” and “ASK” questions. There must be at least 4 such characters, and at least 3 of these characters must be able to “move” between the different regions of your game world, (as the player does).</p>
+<p>You must provide a map and a walkthrough (i.e., a solution) with your submission, to facilitate the marking process. Your game must also provide instructions.</p>
+<p>It is very important to recognize that the majority of the mark you receive for this assignment will be attributed to the quality of your storyline, worldbuilding, setting/enemy/character choices, and descriptions. Since you are communicating your game world to the player entirely through the bodies of text that you have authored, it is especially crucial that you proofread these texts and ensure they are free of spelling and grammatical errors (and anything else that would prevent your player from being fully immersed in the storyline).</p>
+<p>Your submission must not, under any circumstances, be treated as a work of parody or homage, and must not be written “tongue-in-cheek”. In other words, you must treat your assigned genre and tagline seriously, regardless of what they may be.</p>
+<p>This program (along with each of the other programs you have submitted for this class) must be a completely original work, authored by you and you alone, prepared for the current offering (i.e., Winter 2019) of COMP1501. Do not discuss this assignment with anyone except the instructor or the teaching assistants, and do not copy text or source code from the internet or any other source. Submissions that include any volume of plagiarized text will receive an automatic grade of zero.</p>
 
       
     </div>
@@ -518,7 +472,7 @@ neighbouring_cells = {0: {1, 3}, 1: {0, 2, 4}, 2: {1, 5},
           
             <a href="/tags/python/" rel="tag"># python</a>
           
-            <a href="/tags/learn/" rel="tag"># learn</a>
+            <a href="/tags/SQL/" rel="tag"># SQL</a>
           
         </div>
       
@@ -531,8 +485,8 @@ neighbouring_cells = {0: {1, 3}, 1: {0, 2, 4}, 2: {1, 5},
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/04/18/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2019/05/11/2019511/" rel="next" title="java代写:Advanced Programming Assignment2">
+                <i class="fa fa-chevron-left"></i> java代写:Advanced Programming Assignment2
               </a>
             
           </div>
@@ -541,8 +495,8 @@ neighbouring_cells = {0: {1, 3}, 1: {0, 2, 4}, 2: {1, 5},
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/04/23/9021ass2/" rel="prev" title="python代写:COMP9021tangram">
-                python代写:COMP9021tangram <i class="fa fa-chevron-right"></i>
+              <a href="/2022/01/01/CS代写/" rel="prev" title="CS代写">
+                CS代写 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -587,17 +541,8 @@ neighbouring_cells = {0: {1, 3}, 1: {0, 2, 4}, 2: {1, 5},
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <div class="site-overview-wrap sidebar-panel">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -705,23 +650,6 @@ neighbouring_cells = {0: {1, 3}, 1: {0, 2, 4}, 2: {1, 5},
         </div>
       </div>
 
-      
-      <!--noindex-->
-        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-            
-            
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1"><span class="nav-number">1.</span> <span class="nav-text">The 9 puzzle描述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2"><span class="nav-number">2.</span> <span class="nav-text">代码分析部分</span></a></li></ol></div>
-            
-
-          </div>
-        </div>
-      <!--/noindex-->
       
 
       
