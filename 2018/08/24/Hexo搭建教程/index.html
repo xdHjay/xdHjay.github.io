@@ -96,18 +96,18 @@
 
 
 
-  <meta name="description" content="Write a prolog predicate insert(Num, List, NewList) that takes a number Num along with a list of numbers List which is already sorted in increasing order, and binds NewList to the list obtained by in">
-<meta name="keywords" content="prolog">
+  <meta name="description" content="###Hexo搭建教程[TOC] ####1.安装Git ####2.安装Node.js ####3.安装Hexo ####4.GitHub创建个人仓库 ####5.生成SSH添加到GitHub ####6.将hexo部署到GitHub">
+<meta name="keywords" content="python,java,c++,SQL,C">
 <meta property="og:type" content="article">
-<meta property="og:title" content="prolog学习">
-<meta property="og:url" content="http://procodehelp.online/2019/04/28/myprolog/index.html">
+<meta property="og:title" content="Hexo搭建教程">
+<meta property="og:url" content="http://procodehelp.online/2018/08/24/Hexo搭建教程/index.html">
 <meta property="og:site_name" content="Jie&#39;s blog">
-<meta property="og:description" content="Write a prolog predicate insert(Num, List, NewList) that takes a number Num along with a list of numbers List which is already sorted in increasing order, and binds NewList to the list obtained by in">
+<meta property="og:description" content="###Hexo搭建教程[TOC] ####1.安装Git ####2.安装Node.js ####3.安装Hexo ####4.GitHub创建个人仓库 ####5.生成SSH添加到GitHub ####6.将hexo部署到GitHub">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-14T06:41:09.188Z">
+<meta property="og:updated_time" content="2019-09-14T06:38:53.350Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="prolog学习">
-<meta name="twitter:description" content="Write a prolog predicate insert(Num, List, NewList) that takes a number Num along with a list of numbers List which is already sorted in increasing order, and binds NewList to the list obtained by in">
+<meta name="twitter:title" content="Hexo搭建教程">
+<meta name="twitter:description" content="###Hexo搭建教程[TOC] ####1.安装Git ####2.安装Node.js ####3.安装Hexo ####4.GitHub创建个人仓库 ####5.生成SSH添加到GitHub ####6.将hexo部署到GitHub">
 
 
 
@@ -115,7 +115,7 @@
 
   
   
-  <link rel="canonical" href="http://procodehelp.online/2019/04/28/myprolog/">
+  <link rel="canonical" href="http://procodehelp.online/2018/08/24/Hexo搭建教程/">
 
 
 
@@ -125,7 +125,7 @@
   };
 </script>
 
-  <title>prolog学习 | Jie's blog</title>
+  <title>Hexo搭建教程 | Jie's blog</title>
   
 
 
@@ -348,7 +348,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://procodehelp.online/2019/04/28/myprolog/">
+    <link itemprop="mainEntityOfPage" href="http://procodehelp.online/2018/08/24/Hexo搭建教程/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Jie">
@@ -365,7 +365,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">prolog学习
+          <h2 class="post-title" itemprop="name headline">Hexo搭建教程
 
               
             
@@ -391,7 +391,7 @@
                 
               
 
-              <time title="创建时间：2019-04-28 11:25:02" itemprop="dateCreated datePublished" datetime="2019-04-28T11:25:02+08:00">2019-04-28</time>
+              <time title="创建时间：2018-08-24 12:33:24" itemprop="dateCreated datePublished" datetime="2018-08-24T12:33:24+08:00">2018-08-24</time>
             
 
             
@@ -409,7 +409,35 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/prolog/" itemprop="url" rel="index"><span itemprop="name">prolog</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/python/java/" itemprop="url" rel="index"><span itemprop="name">java</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/python/java/c/" itemprop="url" rel="index"><span itemprop="name">c++</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/python/java/c/SQL/" itemprop="url" rel="index"><span itemprop="name">SQL</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/python/java/c/SQL/C/" itemprop="url" rel="index"><span itemprop="name">C</span></a></span>
 
                 
                 
@@ -444,29 +472,30 @@
       
 
       
-        <ul>
-<li><p>Write a prolog predicate insert(Num, List, NewList) that takes a number Num along with a list of numbers List which is already sorted in increasing order, and binds NewList to the list obtained by inserting Num into List so that the resulting list is still sorted in increasing order.</p>
-</li>
-<li><p>Write a predicate isort(List,NewList) that takes a List of numbers in any order, and binds NewList to the list containing the same numbers sorted in increasing order. Hint: your predicate should call the insert() predicate from part .</p>
-</li>
-<li><p>Write a predicate split(BigList,List1,List2) which takes a list BigList and divides the items into two smaller lists List1 and List2, as evenly as possible (i.e. so that the number of items in List1 and List2 differs by no more that 1). Can it be done without measuring the length of the list?</p>
-</li>
-<li><p>Write a predicate merge(Sort1,Sort2,Sort) which takes two lists Sort1 and Sort2 that are already sorted in increasing order, and binds Sort to a new list which combines the elements from Sort1 and Sort2, and is sorted in increasing order.</p>
-</li>
-</ul>
+        <p>###Hexo搭建教程<br>[TOC]</p>
+<p>####1.安装Git</p>
+<p>####2.安装Node.js</p>
+<p>####3.安装Hexo</p>
+<p>####4.GitHub创建个人仓库</p>
+<p>####5.生成SSH添加到GitHub</p>
+<p>####6.将hexo部署到GitHub</p>
 <a id="more"></a>
-<p>prolog主要是需要理解递归，理解之后还是比较容易写出的。<br>对于第一题，插入有序列表，如果插入的数字大于列表第一位，则继续递归。因此开头依然是列表数字第一位，递归后面数字，直到符合。所以需要一个新参数，来代表后面这些数字。</p>
-<pre><code class="prolog"><span class="comment">%base case</span>
-insert(<span class="symbol">Num</span>,[],[<span class="symbol">Num</span>]).
-
-insert(<span class="symbol">Num</span>,[<span class="symbol">A</span>|<span class="symbol">T</span>],[<span class="symbol">Num</span>,<span class="symbol">A</span>|<span class="symbol">T</span>]) :-
-    <span class="symbol">Num</span>=&lt;<span class="symbol">A</span>.
-
-
-insert(<span class="symbol">Num</span>,[<span class="symbol">A</span>|<span class="symbol">T</span>],[<span class="symbol">A</span>|<span class="symbol">T1</span>]):-
-    <span class="symbol">Num</span>&gt;<span class="symbol">A</span>,
-    insert(<span class="symbol">Num</span>,<span class="symbol">T</span>,<span class="symbol">T1</span>).
-</code></pre>
+<p><strong>1. 安装Git</strong></p>
+<p>Git是目前世界上最先进的分布式版本控制系统，可以有效、高速的处理从很小到非常大的项目版本管理。也就是用来管理你的hexo博客文章，上传到GitHub的工具。<br>windows：到git官网上下载,<a href="https://gitforwindows.org/" target="_blank" rel="noopener">Download git</a>,下载后会有一个Git Bash的命令行工具，以后就用这个工具来使用git。<br>linux：对linux来说比较简单，只需要一行代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install git</span><br></pre></td></tr></table></figure></p>
+<p><strong>2. 安装Node.js</strong></p>
+<p>Windows：可以选择下载<a href="https://nodejs.org/en/" target="_blank" rel="noopener">安装链接</a>来下载。安装时，请勾选Add to PATH选项。<br>Linux：使用命令行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install nodejs</span><br><span class="line">sudo apt-get install npm</span><br></pre></td></tr></table></figure></p>
+<p>安装之后，可以使用如下命令行检测是否安装成功<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br><span class="line">``` </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">**3. 安装hexo**</span><br><span class="line">所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo，windows使用git bash，可以先创建一个想要放置blog的文件夹，cd到该目录下，输入命令</span><br><span class="line">``` </span><br><span class="line">npm install -g hexo-cli</span><br><span class="line">``` </span><br><span class="line">安装之后可以使用，hexo -v，来查看是否安装成功。</span><br><span class="line">接下来就可以初始化hexo了。</span><br></pre></td></tr></table></figure></p>
+<p>hexo init <folder> //folder就是你创建blog文件夹的名字<br>cd <folder> //进入到这个文件夹中<br>npm install<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">完成之后，该文件夹中会出现以下文件</span><br><span class="line">新建完成后，指定文件夹目录下有：</span><br><span class="line"></span><br><span class="line">- node_modules: 依赖包</span><br><span class="line">- public：存放生成的页面</span><br><span class="line">- scaffolds：生成文章的一些模板</span><br><span class="line">- source：用来存放你的文章</span><br><span class="line">- themes：主题</span><br><span class="line">-  **_config.yml: 博客的配置文件**</span><br><span class="line"></span><br><span class="line">使用如下命令，打开hexo的服务，浏览器中输入**localhost:4000**就可以看到你生成的博客了。</span><br></pre></td></tr></table></figure></folder></folder></p>
+<p>hexo g<br>hexo server<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">**4. GitHub创建个人仓库**</span><br><span class="line"></span><br><span class="line">首先，你先要有一个GitHub账户，去注册一个吧。如果不自己买域名的话，注册名字的时候就想好要什么名字，因为网站只能是**yourname.github.io**</span><br><span class="line">注册完登录后，在.http://github.com中看到一个New repository，新建仓库。创建一个和你用户名相同的仓库，后面加.http://github.io，只有这样，将来要部署到GitHub page的时候，才会被识别，也就是http://xxxx.github.io，其中xxx就是你注册GitHub的用户名。我这里是已经建过了.</span><br><span class="line">![Alt text](./无标题.png)</span><br><span class="line"></span><br><span class="line">**5. 生成SSH添加到GitHub**</span><br><span class="line">回到git bash中，配置</span><br></pre></td></tr></table></figure></p>
+<p>git config –global user.name “yourname”<br>git config –global user.email “youremail”<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">这里的yourname输入你的GitHub用户名，youremail输入你GitHub的邮箱。这样GitHub才能知道你是不是对应它的账户。</span><br><span class="line">然后创建SSH,一路回车</span><br></pre></td></tr></table></figure></p>
+<p>ssh-keygen -t rsa -C “youremail”<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">然后找到生成的ssh文件夹，windows用户在c盘中的用户中就可以找到.ssh这个文件。</span><br><span class="line">最后在Github的setting中，找到SSH keys的设置选项，点击New SSH key 把你的id_rsa.pub里面的信息复制进去。</span><br><span class="line"></span><br><span class="line">![Alt text](./无标题1.png)</span><br><span class="line">在git bash中，输入以下命令查看是否配置成功</span><br></pre></td></tr></table></figure></p>
+<p>ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">**6. 将hexo部署到GitHub**</span><br><span class="line">这一步，我们就可以将hexo和GitHub关联起来，也就是将hexo生成的文章部署到GitHub上，打开站点配置文件 _config.yml，翻到最后，修改为 YourgithubName就是你的GitHub账户。注意，在输入的时候，冒号之后必须要有一个空格。如下命令所示</span><br></pre></td></tr></table></figure></p>
+<p>deploy:<br>  type: git<br>  repo: <a href="https://github.com/YourgithubName/YourgithubName.github.io.git" target="_blank" rel="noopener">https://github.com/YourgithubName/YourgithubName.github.io.git</a><br>  branch: master<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">```</span><br><span class="line">type:git //这样是不对的，没有空格</span><br></pre></td></tr></table></figure></p>
+<p>此时，安装deploy-git ，也就是部署的命令,这样你才能用命令部署到GitHub。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></p>
+<p>然后使用如下命令，其中 hexo clean清除了你之前生成的东西，也可以不加。 hexo generate 生成静态文章，可以用 hexo g缩写 hexo deploy 部署文章，可以用hexo d缩写<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure></p>
+<p>部署之后，出现以下就说明部署成功。过一会之后就可以在<a href="http://yourname.github.io上面看到你的网站了。" target="_blank" rel="noopener">http://yourname.github.io上面看到你的网站了。</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Info  Deploy done: git</span><br></pre></td></tr></table></figure></p>
+<p>如果长时间后，依然网站依然是404，部署也没有任何错误。就重新depoly一下。</p>
+<p>对这个域名不满意的，可以自己购买一个域名就好了。</p>
 
       
     </div>
@@ -496,7 +525,15 @@ insert(<span class="symbol">Num</span>,[<span class="symbol">A</span>|<span clas
       
         <div class="post-tags">
           
-            <a href="/tags/prolog/" rel="tag"># prolog</a>
+            <a href="/tags/python/" rel="tag"># python</a>
+          
+            <a href="/tags/java/" rel="tag"># java</a>
+          
+            <a href="/tags/c/" rel="tag"># c++</a>
+          
+            <a href="/tags/SQL/" rel="tag"># SQL</a>
+          
+            <a href="/tags/C/" rel="tag"># C</a>
           
         </div>
       
@@ -509,18 +546,14 @@ insert(<span class="symbol">Num</span>,[<span class="symbol">A</span>|<span clas
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/04/27/Diophantine equation/" rel="next" title="Diophantine equations">
-                <i class="fa fa-chevron-left"></i> Diophantine equations
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/09/14/puzzle9-problem/" rel="prev" title="puzzle9-problem">
-                puzzle9-problem <i class="fa fa-chevron-right"></i>
+              <a href="/2019/04/18/hello-world/" rel="prev" title="Hello World">
+                Hello World <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
