@@ -104,13 +104,13 @@
 <meta property="og:site_name" content="Jie&#39;s blog">
 <meta property="og:description" content="[TOC] Hexo搭建教程">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://procodehelp.online/2018/08/24/Hexo搭建教程/无标题.png">
-<meta property="og:image" content="http://procodehelp.online/2018/08/24/Hexo搭建教程/无标题1.png">
-<meta property="og:updated_time" content="2019-09-14T07:51:12.079Z">
+<meta property="og:image" content="http://procodehelp.online/images/无标题.png">
+<meta property="og:image" content="http://procodehelp.online/images/无标题1.png">
+<meta property="og:updated_time" content="2019-09-14T07:54:00.630Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo搭建教程">
 <meta name="twitter:description" content="[TOC] Hexo搭建教程">
-<meta name="twitter:image" content="http://procodehelp.online/2018/08/24/Hexo搭建教程/无标题.png">
+<meta name="twitter:image" content="http://procodehelp.online/images/无标题.png">
 
 
 
@@ -491,11 +491,11 @@
 <li><strong>_config.yml: 博客的配置文件</strong></li>
 </ul>
 <p>使用如下命令，打开hexo的服务，浏览器中输入<strong>localhost:4000</strong>就可以看到你生成的博客了。<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure></p>
-<h4 id="4-GitHub创建个人仓库"><a href="#4-GitHub创建个人仓库" class="headerlink" title="4. GitHub创建个人仓库"></a><strong>4. GitHub创建个人仓库</strong></h4><p>首先，你先要有一个GitHub账户，去注册一个吧。如果不自己买域名的话，注册名字的时候就想好要什么名字，因为网站只能是<strong>yourname.github.io</strong><br>注册完登录后，在.<a href="http://github.com中看到一个New" target="_blank" rel="noopener">http://github.com中看到一个New</a> repository，新建仓库。创建一个和你用户名相同的仓库，后面加.<a href="http://github.io，只有这样，将来要部署到GitHub" target="_blank" rel="noopener">http://github.io，只有这样，将来要部署到GitHub</a> page的时候，才会被识别，也就是<a href="http://xxxx.github.io，其中xxx就是你注册GitHub的用户名。我这里是已经建过了" target="_blank" rel="noopener">http://xxxx.github.io，其中xxx就是你注册GitHub的用户名。我这里是已经建过了</a>.<br><img src="./无标题.png" alt="Alt text"></p>
+<h4 id="4-GitHub创建个人仓库"><a href="#4-GitHub创建个人仓库" class="headerlink" title="4. GitHub创建个人仓库"></a><strong>4. GitHub创建个人仓库</strong></h4><p>首先，你先要有一个GitHub账户，去注册一个吧。如果不自己买域名的话，注册名字的时候就想好要什么名字，因为网站只能是<strong>yourname.github.io</strong><br>注册完登录后，在.<a href="http://github.com中看到一个New" target="_blank" rel="noopener">http://github.com中看到一个New</a> repository，新建仓库。创建一个和你用户名相同的仓库，后面加.<a href="http://github.io，只有这样，将来要部署到GitHub" target="_blank" rel="noopener">http://github.io，只有这样，将来要部署到GitHub</a> page的时候，才会被识别，也就是<a href="http://xxxx.github.io，其中xxx就是你注册GitHub的用户名。我这里是已经建过了" target="_blank" rel="noopener">http://xxxx.github.io，其中xxx就是你注册GitHub的用户名。我这里是已经建过了</a>.<br><img src="/images/无标题.png" alt></p>
 <h4 id="5-生成SSH添加到GitHub"><a href="#5-生成SSH添加到GitHub" class="headerlink" title="5. 生成SSH添加到GitHub"></a><strong>5. 生成SSH添加到GitHub</strong></h4><p>回到git bash中，配置<br>    <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">"yourname"</span></span><br><span class="line">git config --global user.email <span class="string">"youremail"</span></span><br></pre></td></tr></table></figure></p>
 <p>这里的yourname输入你的GitHub用户名，youremail输入你GitHub的邮箱。这样GitHub才能知道你是不是对应它的账户。<br>然后创建SSH,一路回车<br>    <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">"youremail"</span></span><br></pre></td></tr></table></figure></p>
 <p>然后找到生成的ssh文件夹，windows用户在c盘中的用户中就可以找到.ssh这个文件。<br>最后在Github的setting中，找到SSH keys的设置选项，点击New SSH key 把你的id_rsa.pub里面的信息复制进去。</p>
-<p><img src="./无标题1.png" alt="Alt text"><br>在git bash中，输入以下命令查看是否配置成功<br>    <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure></p>
+<p><img src="/images/无标题1.png" alt><br>在git bash中，输入以下命令查看是否配置成功<br>    <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure></p>
 <h4 id="6-将hexo部署到GitHub"><a href="#6-将hexo部署到GitHub" class="headerlink" title="6. 将hexo部署到GitHub"></a><strong>6. 将hexo部署到GitHub</strong></h4><p>这一步，我们就可以将hexo和GitHub关联起来，也就是将hexo生成的文章部署到GitHub上，打开站点配置文件 _config.yml，翻到最后，修改为 YourgithubName就是你的GitHub账户。注意，在输入的时候，冒号之后必须要有一个空格。如下命令所示<br>    <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: https://github.com/YourgithubName/YourgithubName.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></p>
 <pre><code><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">type</span>:git //这样是不对的，没有空格</span><br></pre></td></tr></table></figure>
 </code></pre><p>此时，安装deploy-git ，也就是部署的命令,这样你才能用命令部署到GitHub。<br>    <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></p>
