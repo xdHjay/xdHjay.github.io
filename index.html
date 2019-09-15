@@ -521,6 +521,165 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://procodehelp.online/2019/06/30/SelectTermAndCourse/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jie">
+      <meta itemprop="description" content="咸鱼就是我">
+      <meta itemprop="image" content="/images/wechat.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jie's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/06/30/SelectTermAndCourse/" class="post-title-link" itemprop="url">SelectTermAndCourse</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-06-30 14:49:03" itemprop="dateCreated datePublished" datetime="2019-06-30T14:49:03+08:00">2019-06-30</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Shell/" itemprop="url" rel="index"><span itemprop="name">Shell</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>学了Shell之后，感觉学校的HandBook太蠢了，没有选项根据学期来分离课程，毕竟选课的时候是根据学期来选的，你只在页面上看到了这门课，但是点进去才发现不是这学期的。就很浪费时间。<br>所以用shell写了一个脚本可以直接将课程代码与他开设的学期对应起来，下次再找课的时候就会比较的方便。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">	URL=https://www.handbook.unsw.edu.au/postgraduate/courses/2019/</span><br><span class="line">course=`wget -q -O- https://www.handbook.unsw.edu.au/postgraduate/specialisations/2019/COMPAS |egrep <span class="string">"&lt;a href=\"/postgraduate/courses/2019/"</span>|sed -r <span class="string">'s?&lt;a href="/postgraduate/courses/2019/([A-Z]&#123;4&#125;[0-9]&#123;4&#125;)/?\1?'</span>|awk <span class="string">'&#123;print $1&#125;'</span> |sort|uniq`</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> class <span class="keyword">in</span> <span class="variable">$course</span></span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">	<span class="built_in">echo</span> <span class="variable">$class</span> `wget -q -O- https://www.handbook.unsw.edu.au/postgraduate/courses/2019/<span class="variable">$class</span>|egrep <span class="string">"Term [0-9]"</span>|sed -r <span class="string">'s/&lt;.*&gt;([Summer Term|Term][^&lt;]*).*/\1/'</span>|head -n1` &gt;&gt; courseAndterm.txt</span><br><span class="line"></span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure>
+<p>代码也是非常的简单，基本就是使用了一些基本的命令，egrep，sed，head等等之类。不过还是省了不少事，爽</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://procodehelp.online/2019/05/18/myprolog/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1377,7 +1536,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-count">7</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1404,7 +1563,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">7</span>
+                      
+                    
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">分类</span>
                   
                 </div>
@@ -1437,7 +1598,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">8</span>
+                      
+                    
+                    <span class="site-state-item-count">9</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
