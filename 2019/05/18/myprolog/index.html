@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="Jie&#39;s blog">
 <meta property="og:description" content="Write a prolog predicate insert(Num, List, NewList) that takes a number Num along with a list of numbers List which is already sorted in increasing order, and binds NewList to the list obtained by in">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-14T09:29:26.581Z">
+<meta property="og:updated_time" content="2019-09-14T09:33:19.495Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="prolog学习">
 <meta name="twitter:description" content="Write a prolog predicate insert(Num, List, NewList) that takes a number Num along with a list of numbers List which is already sorted in increasing order, and binds NewList to the list obtained by in">
@@ -446,6 +446,7 @@
       
         <ul>
 <li><p>Write a prolog predicate insert(Num, List, NewList) that takes a number Num along with a list of numbers List which is already sorted in increasing order, and binds NewList to the list obtained by inserting Num into List so that the resulting list is still sorted in increasing order.</p>
+<a id="more"></a>
 </li>
 <li><p>Write a predicate isort(List,NewList) that takes a List of numbers in any order, and binds NewList to the list containing the same numbers sorted in increasing order. Hint: your predicate should call the insert() predicate from part .</p>
 </li>
@@ -454,7 +455,6 @@
 <li><p>Write a predicate merge(Sort1,Sort2,Sort) which takes two lists Sort1 and Sort2 that are already sorted in increasing order, and binds Sort to a new list which combines the elements from Sort1 and Sort2, and is sorted in increasing order.</p>
 </li>
 </ul>
-<a id="more"></a>
 <p>prolog主要是需要理解递归，理解之后还是比较容易写出的。<br>对于第一题，插入有序列表，如果插入的数字大于列表第一位，则继续递归。因此开头依然是列表数字第一位，递归后面数字，直到符合。所以需要一个新参数，来代表后面这些数字。</p>
 <pre><code class="prolog"><span class="comment">%base case</span>
 insert(<span class="symbol">Num</span>,[],[<span class="symbol">Num</span>]).
