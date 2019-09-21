@@ -96,18 +96,18 @@
 
 
 
-  <meta name="description" content="学了Shell之后，感觉学校的HandBook太蠢了，没有选项根据学期来分离课程，毕竟选课的时候是根据学期来选的，你只在页面上看到了这门课，但是点进去才发现不是这学期的。就很浪费时间。所以用shell写了一个脚本可以直接将课程代码与他开设的学期对应起来，下次再找课的时候就会比较的方便。 12345678	URL=https://www.handbook.unsw.edu.au/postgradua">
+  <meta name="description" content="学了Shell之后，感觉学校的HandBook太蠢了，没有选项根据学期来分离课程，毕竟选课的时候是根据学期来选的，你只在页面上看到了这门课，但是点进去才发现不是这学期的。就很浪费时间。所以用shell写了一个脚本可以直接将课程代码与他开设的学期对应起来，下次再找课的时候就会比较的方便。 12345678URL=https://www.handbook.unsw.edu.au/postgraduat">
 <meta name="keywords" content="Shell">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SelectTermAndCourse">
 <meta property="og:url" content="http://procodehelp.online/2019/06/30/SelectTermAndCourse/index.html">
 <meta property="og:site_name" content="Jie&#39;s blog">
-<meta property="og:description" content="学了Shell之后，感觉学校的HandBook太蠢了，没有选项根据学期来分离课程，毕竟选课的时候是根据学期来选的，你只在页面上看到了这门课，但是点进去才发现不是这学期的。就很浪费时间。所以用shell写了一个脚本可以直接将课程代码与他开设的学期对应起来，下次再找课的时候就会比较的方便。 12345678	URL=https://www.handbook.unsw.edu.au/postgradua">
+<meta property="og:description" content="学了Shell之后，感觉学校的HandBook太蠢了，没有选项根据学期来分离课程，毕竟选课的时候是根据学期来选的，你只在页面上看到了这门课，但是点进去才发现不是这学期的。就很浪费时间。所以用shell写了一个脚本可以直接将课程代码与他开设的学期对应起来，下次再找课的时候就会比较的方便。 12345678URL=https://www.handbook.unsw.edu.au/postgraduat">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-15T06:57:08.993Z">
+<meta property="og:updated_time" content="2019-09-15T07:00:30.192Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SelectTermAndCourse">
-<meta name="twitter:description" content="学了Shell之后，感觉学校的HandBook太蠢了，没有选项根据学期来分离课程，毕竟选课的时候是根据学期来选的，你只在页面上看到了这门课，但是点进去才发现不是这学期的。就很浪费时间。所以用shell写了一个脚本可以直接将课程代码与他开设的学期对应起来，下次再找课的时候就会比较的方便。 12345678	URL=https://www.handbook.unsw.edu.au/postgradua">
+<meta name="twitter:description" content="学了Shell之后，感觉学校的HandBook太蠢了，没有选项根据学期来分离课程，毕竟选课的时候是根据学期来选的，你只在页面上看到了这门课，但是点进去才发现不是这学期的。就很浪费时间。所以用shell写了一个脚本可以直接将课程代码与他开设的学期对应起来，下次再找课的时候就会比较的方便。 12345678URL=https://www.handbook.unsw.edu.au/postgraduat">
 
 
 
@@ -445,7 +445,7 @@
 
       
         <p>学了Shell之后，感觉学校的HandBook太蠢了，没有选项根据学期来分离课程，毕竟选课的时候是根据学期来选的，你只在页面上看到了这门课，但是点进去才发现不是这学期的。就很浪费时间。<br>所以用shell写了一个脚本可以直接将课程代码与他开设的学期对应起来，下次再找课的时候就会比较的方便。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">	URL=https://www.handbook.unsw.edu.au/postgraduate/courses/2019/</span><br><span class="line">course=`wget -q -O- https://www.handbook.unsw.edu.au/postgraduate/specialisations/2019/COMPAS |egrep <span class="string">"&lt;a href=\"/postgraduate/courses/2019/"</span>|sed -r <span class="string">'s?&lt;a href="/postgraduate/courses/2019/([A-Z]&#123;4&#125;[0-9]&#123;4&#125;)/?\1?'</span>|awk <span class="string">'&#123;print $1&#125;'</span> |sort|uniq`</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> class <span class="keyword">in</span> <span class="variable">$course</span></span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">	<span class="built_in">echo</span> <span class="variable">$class</span> `wget -q -O- https://www.handbook.unsw.edu.au/postgraduate/courses/2019/<span class="variable">$class</span>|egrep <span class="string">"Term [0-9]"</span>|sed -r <span class="string">'s/&lt;.*&gt;([Summer Term|Term][^&lt;]*).*/\1/'</span>|head -n1` &gt;&gt; courseAndterm.txt</span><br><span class="line"></span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">URL=https://www.handbook.unsw.edu.au/postgraduate/courses/2019/</span><br><span class="line">course=`wget -q -O- https://www.handbook.unsw.edu.au/postgraduate/specialisations/2019/COMPAS |egrep <span class="string">"&lt;a href=\"/postgraduate/courses/2019/"</span>|sed -r <span class="string">'s?&lt;a href="/postgraduate/courses/2019/([A-Z]&#123;4&#125;[0-9]&#123;4&#125;)/?\1?'</span>|awk <span class="string">'&#123;print $1&#125;'</span> |sort|uniq`</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> class <span class="keyword">in</span> <span class="variable">$course</span></span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">	<span class="built_in">echo</span> <span class="variable">$class</span> `wget -q -O- https://www.handbook.unsw.edu.au/postgraduate/courses/2019/<span class="variable">$class</span>|egrep <span class="string">"Term [0-9]"</span>|sed -r <span class="string">'s/&lt;.*&gt;([Summer Term|Term][^&lt;]*).*/\1/'</span>|head -n1` &gt;&gt; courseAndterm.txt</span><br><span class="line"></span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure>
 <p>代码也是非常的简单，基本就是使用了一些基本的命令，egrep，sed，head等等之类。不过还是省了不少事，爽</p>
 
       
@@ -563,7 +563,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-count">9</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
