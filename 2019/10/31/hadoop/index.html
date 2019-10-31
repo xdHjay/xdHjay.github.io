@@ -96,16 +96,18 @@
 
 
 
-  <meta name="description" content="咸鱼就是我">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Jie&#39;s blog">
-<meta property="og:url" content="http://procodehelp.online/categories/prolog/index.html">
+  <meta name="description" content="感觉网上的博客对于如何重写arraywritable并不是很详细，自己重新整理了一下，如何使用arraywritable存放复杂类。 1234567891011121314151617181920212223242526272829303132333435363738public class MyArrayWritable extends ArrayWritable &amp;#123; 	public">
+<meta name="keywords" content="java">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hadoop ArrayWritable实现自定义类">
+<meta property="og:url" content="http://procodehelp.online/2019/10/31/hadoop/index.html">
 <meta property="og:site_name" content="Jie&#39;s blog">
-<meta property="og:description" content="咸鱼就是我">
+<meta property="og:description" content="感觉网上的博客对于如何重写arraywritable并不是很详细，自己重新整理了一下，如何使用arraywritable存放复杂类。 1234567891011121314151617181920212223242526272829303132333435363738public class MyArrayWritable extends ArrayWritable &amp;#123; 	public">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-10-31T05:26:07.010Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Jie&#39;s blog">
-<meta name="twitter:description" content="咸鱼就是我">
+<meta name="twitter:title" content="hadoop ArrayWritable实现自定义类">
+<meta name="twitter:description" content="感觉网上的博客对于如何重写arraywritable并不是很详细，自己重新整理了一下，如何使用arraywritable存放复杂类。 1234567891011121314151617181920212223242526272829303132333435363738public class MyArrayWritable extends ArrayWritable &amp;#123; 	public">
 
 
 
@@ -113,7 +115,7 @@
 
   
   
-  <link rel="canonical" href="http://procodehelp.online/categories/prolog/">
+  <link rel="canonical" href="http://procodehelp.online/2019/10/31/hadoop/">
 
 
 
@@ -123,7 +125,7 @@
   };
 </script>
 
-  <title>分类: prolog | Jie's blog</title>
+  <title>hadoop ArrayWritable实现自定义类 | Jie's blog</title>
   
 
 
@@ -174,7 +176,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -250,7 +252,7 @@
         
         
           
-          <li class="menu-item menu-item-categories menu-item-active">
+          <li class="menu-item menu-item-categories">
 
     
     
@@ -326,83 +328,180 @@
           
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block category">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h2>prolog<small>分类</small>
-        </h2>
-      </div>
+  
 
-      
-        
+  
+  
+  
+
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://procodehelp.online/2019/10/31/hadoop/">
 
-      <h3 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jie">
+      <meta itemprop="description" content="咸鱼就是我">
+      <meta itemprop="image" content="/images/wechat.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jie's blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
-          <a class="post-title-link" href="/2019/05/18/myprolog/" itemprop="url">
-            
-              <span itemprop="name">prolog学习</span>
-            
-          </a>
         
-      </h3>
+          <h2 class="post-title" itemprop="name headline">hadoop ArrayWritable实现自定义类
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-05-18T11:25:02+08:00" content="2019-05-18">
-          05-18
-        </time>
-      </div>
+              
+            
+          </h2>
+        
 
-    </header>
-  </article>
+        <div class="post-meta">
+          <span class="post-time">
 
+            
+            
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-10-31 13:08:47" itemprop="dateCreated datePublished" datetime="2019-10-31T13:08:47+08:00">2019-10-31</time>
+            
+
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>感觉网上的博客对于如何重写arraywritable并不是很详细，自己重新整理了一下，如何使用arraywritable存放复杂类。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyArrayWritable</span> <span class="keyword">extends</span> <span class="title">ArrayWritable</span> </span>&#123; </span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">MyArrayWritable</span><span class="params">()</span> </span>&#123; </span><br><span class="line">		<span class="keyword">super</span>(SomeComplexClass.class);  <span class="comment">//首先构造函数中写需要存放的对象的类</span></span><br><span class="line">		&#125; </span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">MyArrayWritable</span><span class="params">(String[] strings)</span> </span>&#123;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">super</span>(SomeComplexClass.class);</span><br><span class="line">        Text[] texts = <span class="keyword">new</span> Text[strings.length];</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; strings.length; i++) &#123;</span><br><span class="line">            texts[i] = <span class="keyword">new</span> Text(strings[i]);</span><br><span class="line">        &#125;</span><br><span class="line">       set(texts);  <span class="comment">//这个是set父类的value</span></span><br><span class="line">    &#125;</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">	<span class="comment">//由于是自定义的对象，因此需要写toString函数。</span></span><br><span class="line">	<span class="comment">//否则在存入的时候会存入对象的地址，而不是想要的信息。</span></span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		StringBuilder sb = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">		<span class="comment">//使用this.get()获取strings的长度</span></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="keyword">this</span>.get().length; i++) &#123;</span><br><span class="line">			<span class="comment">//some code</span></span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> sb.toString();</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">//最后在reduce的时候，就可以存入一个array的value了。</span></span><br><span class="line">	</span><br><span class="line">	<span class="comment">//例如这样，在reduce时，有一个复杂对象的values。可以用arraylist将其加入，最后变成string数组放到MyArrayWritable中。</span></span><br><span class="line">	ArrayList&lt;String&gt; al = <span class="keyword">new</span> ArrayList&lt;String&gt;();</span><br><span class="line">	<span class="keyword">for</span> (SomeComplexClass val : values) &#123;</span><br><span class="line">		al.add(val.toString());</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	context.write(key, <span class="keyword">new</span> MyArrayWritable((String[]) al.toArray(<span class="keyword">new</span> String[al.size()])));</span><br></pre></td></tr></table></figure>
       
     </div>
 
+    
+
+    
+    
+    
+
+    
+      <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center;">
+  <img id="wechat_subscriber_qcode" src="/images/wechat.jpg" alt="Jie wechat" style="width: 200px; max-width: 100%;">
+  <div>学就完事</div>
+</div>
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/java/" rel="tag"># java</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/09/28/完美世界2020Java开发/" rel="next" title="完美世界2020Java开发">
+                <i class="fa fa-chevron-left"></i> 完美世界2020Java开发
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -674,6 +773,10 @@
 
 
   
+  <script src="/js/scrollspy.js?v=7.1.0"></script>
+<script src="/js/post-details.js?v=7.1.0"></script>
+
+
 
   
 
@@ -689,6 +792,8 @@
 
   
 
+
+  
 
 
   
