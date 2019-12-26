@@ -367,7 +367,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2019/11/26/20191226/" class="post-title-link" itemprop="url">20191226</a>
+                <a href="/2019/11/26/20191226/" class="post-title-link" itemprop="url">KMP algorithm</a>
               
             
           </h2>
@@ -429,6 +429,7 @@
       
         
           <p>很久以前看到的KMP算法，重新回顾了一下。主要就是如何寻找next数组。<br>对于类似字符串A,aaaaaaab,与字符串B，aaab。寻找A中包含字符串B的位置。<br>如果使用暴力搜索，每次失配都需要从A的下一位开始，但其实并不用。对于这个例子来说，<br>前面的两位是不需要再次判断的，因为有公共的前后缀，因此构建一个next数组如下。<br>B：    a a a b<br>index: 0 1 2 3<br>next:  0 1 2 0 </p>
+<p>假设我们已经知道了aa这个字符串的值为1，那么如果新加入另一个字母a，则判断index为1的值和该值是否相同。<br>相同，则在之前的前缀表长度加一，如果不同，则找到前一个字符的前缀表，进行如上的判断。</p>
           <!--noindex-->
           
             <div class="post-button text-center">
